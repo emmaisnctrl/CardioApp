@@ -83,9 +83,9 @@ def predict_from_video():
         new_scan = Scan(
             user_id=user_id,
             heart_rate=result['heart_rate'] or 0,
-            spo2=result['spo2'],
+            spo2=result['spo2'] or 0,
             condition=result['condition'],
-            confidence_score=result['confidence'],
+            confidence_score=result['confidence'] or 0,
             recommendation="Groq AI recommendation coming soon."
         )
         db.session.add(new_scan)
@@ -96,6 +96,7 @@ def predict_from_video():
             'confidence': result['confidence'],
             'heart_rate': result['heart_rate'],
             'spo2': result['spo2'],
+            'basis': result['basis'],
             'pre_scan_state': pre_scan_state,
             'scan_id': new_scan.id,
             'recommendation': "Groq AI recommendation coming soon."

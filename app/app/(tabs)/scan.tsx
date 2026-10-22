@@ -116,6 +116,7 @@ export default function ScanScreen() {
           scan_id: String(result.scan_id),
           recommendation: result.recommendation,
           scanned_at: new Date().toLocaleString(),
+          basis: String(result.basis ?? ""),
         },
       });
 
