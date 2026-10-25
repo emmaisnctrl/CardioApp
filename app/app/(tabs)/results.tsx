@@ -9,8 +9,6 @@ import {
 import { useRouter, useLocalSearchParams } from "expo-router";
 
 // ── RESULT OBJECT SHAPE ───────────────────────────────────────
-// What the results screen expects to receive from the scan screen.
-// When Groq AI is integrated, recommendation will hold the AI text.
 interface ScanResult {
   condition: string;
   confidence: string;
@@ -61,10 +59,19 @@ export default function ResultsScreen() {
 
   const basis = (params.basis as string) || "";
 
-  // SpO2 is an experimental camera estimate and may be missing
+  // SpO2 is an uncalibrated camera estimate and may be missing
   const spo2Num = parseFloat((params.spo2 as string) || "");
   const hasSpo2 = !isNaN(spo2Num) && spo2Num > 0;
 
+  // Pulse analysis (regularity, variability, signal quality)
+  const regularity = (params.regularity as string) || "";
+  const quality = (params.quality as string) || "";
+  const prvNum = parseFloat((params.prv as string) || "");
+  const hasPrv = !isNaN(prvNum) && prvNum > 0;
+  const showPulse = regularity !== "" && regularity !== "Not recorded";
+  const irregular = regularity === "Possibly irregular";
+  const variable = regularity === "Slightly variable";
+  const pulseColor = irregular || variable ? "#BA7517" : "#1D9E75";
   const conditionColor = CONDITION_COLORS[result.condition] || BLUE;
   const conditionIcon = CONDITION_ICONS[result.condition] || "•";
 
@@ -91,8 +98,9 @@ export default function ResultsScreen() {
           `Date: ${result.scanned_at}\n` +
           `Condition: ${result.condition}\n` +
           `Heart Rate: ${hasHeartRate ? result.heart_rate : "--"} BPM\n` +
-          (hasSpo2 ? `SpO2 (experimental estimate): ${spo2Num.toFixed(0)}%\n` : "") +
-          (hasConfidence ? `Confidence: ${result.confidence}%\n` : "") +
+          (showPulse ? `Pulse regularity: ${regularity}\n` : "") +
+          (hasSpo2 ? `SpO2 (uncalibrated estimate): ${spo2Num.toFixed(0)}%\n` : "") +
+          (hasConfidence ? `Confidence: ${confidenceNum.toFixed(0)}%\n` : "") +
           `\nRecommendation: ${result.recommendation}\n\n` +
           `CardioApp is a screening tool and does not replace professional medical diagnosis.`,
       });
@@ -144,7 +152,7 @@ export default function ResultsScreen() {
               </Text>
             </View>
           </View>
-          <Text style={styles.measurementLabel}>Heart Rate</Text>
+          <Text style={styles.measurementLabel}>Heart Rate (Pulse)</Text>
           <Text style={styles.measurementValue}>
             {hasHeartRate ? result.heart_rate : "--"}
             <Text style={styles.measurementUnit}> BPM</Text>
@@ -152,7 +160,7 @@ export default function ResultsScreen() {
           <Text style={styles.measurementSub}>Normal range: 60–100 BPM</Text>
         </View>
 
-        {/* SpO2 Card (experimental camera estimate) */}
+        {/* SpO2 Card (uncalibrated camera estimate) */}
         <View style={styles.measurementCard}>
           <View style={styles.measurementCardTop}>
             <Text style={styles.measurementIcon}>💧</Text>
@@ -179,7 +187,7 @@ export default function ResultsScreen() {
           </Text>
           <Text style={styles.measurementSub}>
             {hasSpo2
-              ? "Experimental camera estimate, not a medical measurement"
+              ? "Uncalibrated camera estimate, not a medical reading"
               : "Signal too weak to estimate"}
           </Text>
         </View>
@@ -194,7 +202,7 @@ export default function ResultsScreen() {
           {hasConfidence && (
             <View style={[styles.confidenceBadge, { backgroundColor: conditionColor }]}>
               <Text style={styles.confidenceBadgeText}>
-                {confidenceNum.toFixed(1)}% confidence
+                {confidenceNum.toFixed(0)}% confidence
               </Text>
             </View>
           )}
@@ -205,6 +213,41 @@ export default function ResultsScreen() {
         {basis ? <Text style={styles.conditionSub}>Basis: {basis}</Text> : null}
         <Text style={styles.conditionSub}>Recorded while: {result.pre_scan_state}</Text>
       </View>
+
+      {/* Pulse Regularity Card (hidden for scans saved before this feature) */}
+      {showPulse && (
+        <View style={[styles.conditionCard, { borderLeftColor: pulseColor }]}>
+          <View style={styles.conditionCardTop}>
+            <Text style={[styles.conditionLabel, { color: pulseColor }]}>
+              Pulse regularity: {regularity}
+            </Text>
+            {quality ? (
+              <View style={[styles.statusBadge, { backgroundColor: "#E3F2FD" }]}>
+                <Text style={[styles.statusBadgeText, { color: BLUE }]}>
+                  {quality.toUpperCase()} SIGNAL
+                </Text>
+              </View>
+            ) : null}
+          </View>
+          {hasPrv ? (
+            <Text style={styles.conditionSub}>
+              Pulse rate variability: {prvNum.toFixed(0)} ms (indicative only)
+            </Text>
+          ) : null}
+          <Text style={styles.conditionSub}>
+            {irregular
+              ? "Beat-to-beat timing varied more than usual in this scan. This can be caused by normal breathing or movement, so repeat the scan at rest. Repeated flags matter more than a single one."
+              : variable
+              ? "Beat-to-beat timing varied a little in this scan, which is common (for example with breathing). No action is needed from one reading."
+              : "Beat-to-beat timing looked steady in this scan."}
+          </Text>
+          {quality === "Fair" ? (
+            <Text style={styles.conditionSub}>
+              Signal quality was fair, so treat this reading with extra caution.
+            </Text>
+          ) : null}
+        </View>
+      )}
 
       {/* AI Recommendation Card */}
       <View style={styles.recommendationCard}>
@@ -316,10 +359,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: 6,
   },
-  conditionLabel: { fontSize: 16, fontWeight: "700" },
+  conditionLabel: { fontSize: 16, fontWeight: "700", flexShrink: 1 },
   confidenceBadge: { paddingHorizontal: 8, paddingVertical: 3, borderRadius: 20 },
   confidenceBadgeText: { color: "#fff", fontSize: 11, fontWeight: "600" },
-  conditionSub: { fontSize: 12, color: "#888", marginTop: 2 },
+  conditionSub: { fontSize: 12, color: "#888", marginTop: 2, lineHeight: 17 },
 
   recommendationCard: {
     marginHorizontal: 16,

@@ -3,11 +3,38 @@ from app import db
 from app.models.scan import Scan
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from app.ml.predict import predict_condition, extract_ppg_from_video
+from app.ml.recommend import get_recommendation
 import tempfile
 import os
 
 # Create a blueprint named 'scan' to group all scan related routes
 scan = Blueprint('scan', __name__)
+
+
+def quality_problem(result):
+    """If the pulse signal was too poor to trust, return a friendly rescan message."""
+    pulse = result.get('pulse') or {}
+    if pulse.get('quality') != 'Poor':
+        return None
+    reason = pulse.get('reason', '')
+    if 'Finger' in reason:
+        return ("We could not detect your finger. Cover the camera lens and the flash "
+                "fully with your fingertip, then scan again.")
+    if 'bright' in reason:
+        return "The image was too bright. Press a little more lightly and scan again."
+    return ("The pulse signal was too unclear to read. Rest your hand on a table, "
+            "keep your finger still for the whole scan, and try again.")
+
+
+def pulse_fields(result):
+    """Pulls the new pulse-analysis values out of a prediction result."""
+    pulse = result.get('pulse') or {}
+    return {
+        'regularity': pulse.get('regularity', 'Not recorded'),
+        'prv_ms': pulse.get('rmssd_ms'),
+        'quality': pulse.get('quality', 'Not recorded'),
+    }
+
 
 # ─── PREDICT FROM RAW SIGNAL ────────────────────────────────
 @scan.route('/predict', methods=['POST'])
@@ -26,13 +53,26 @@ def predict():
     if 'error' in result:
         return jsonify({'message': result['error']}), 400
 
+    problem = quality_problem(result)
+    if problem:
+        return jsonify({'message': problem}), 400
+
+    pf = pulse_fields(result)
+    recommendation = get_recommendation(
+        result['condition'], result['heart_rate'], pre_scan_state
+    )
+
     new_scan = Scan(
         user_id=user_id,
         heart_rate=result['heart_rate'] or 0,
-        spo2=result['spo2'],
+        spo2=result['spo2'] or 0,
         condition=result['condition'],
-        confidence_score=result['confidence'],
-        recommendation="Groq AI recommendation coming soon."
+        confidence_score=result['confidence'] or 0,
+        recommendation=recommendation,
+        pre_scan_state=pre_scan_state,
+        pulse_regularity=pf['regularity'],
+        prv_ms=pf['prv_ms'] or 0,
+        scan_quality=pf['quality']
     )
     db.session.add(new_scan)
     db.session.commit()
@@ -42,9 +82,13 @@ def predict():
         'confidence': result['confidence'],
         'heart_rate': result['heart_rate'],
         'spo2': result['spo2'],
+        'basis': result.get('basis', ''),
+        'regularity': pf['regularity'],
+        'prv_ms': pf['prv_ms'],
+        'quality': pf['quality'],
         'pre_scan_state': pre_scan_state,
         'scan_id': new_scan.id,
-        'recommendation': "Groq AI recommendation coming soon."
+        'recommendation': recommendation
     }), 200
 
 
@@ -67,26 +111,43 @@ def predict_from_video():
         tmp_path = tmp.name
 
     try:
-        # Extract red channel values from every video frame
+        # Extract the colour channel values from every video frame
         raw_signal, fps, error = extract_ppg_from_video(tmp_path)
 
         if error:
             return jsonify({'message': error}), 400
 
-        # Run the extracted signal through the ML model
-        result = predict_condition(raw_signal, fps)
+        # Run the extracted signal through the model and pulse analysis
+        result = predict_condition(raw_signal, fps, pre_scan_state)
 
         if 'error' in result:
             return jsonify({'message': result['error']}), 400
 
-        # Save result to database
+        # Poor-quality scans are rejected and NOT saved
+        problem = quality_problem(result)
+        if problem:
+            return jsonify({'message': problem}), 400
+
+        pf = pulse_fields(result)
+
+        # Plain-language advice (Groq if a key is set, built-in advice otherwise)
+        recommendation = get_recommendation(
+            result['condition'], result['heart_rate'], pre_scan_state,
+            pf['regularity'], result.get('basis', '')
+        )
+
+        # Save result to database (0 means "not available")
         new_scan = Scan(
             user_id=user_id,
             heart_rate=result['heart_rate'] or 0,
             spo2=result['spo2'] or 0,
             condition=result['condition'],
             confidence_score=result['confidence'] or 0,
-            recommendation="Groq AI recommendation coming soon."
+            recommendation=recommendation,
+            pre_scan_state=pre_scan_state,
+            pulse_regularity=pf['regularity'],
+            prv_ms=pf['prv_ms'] or 0,
+            scan_quality=pf['quality']
         )
         db.session.add(new_scan)
         db.session.commit()
@@ -97,9 +158,12 @@ def predict_from_video():
             'heart_rate': result['heart_rate'],
             'spo2': result['spo2'],
             'basis': result['basis'],
+            'regularity': pf['regularity'],
+            'prv_ms': pf['prv_ms'],
+            'quality': pf['quality'],
             'pre_scan_state': pre_scan_state,
             'scan_id': new_scan.id,
-            'recommendation': "Groq AI recommendation coming soon."
+            'recommendation': recommendation
         }), 200
 
     finally:
@@ -123,6 +187,10 @@ def get_history():
             'condition': s.condition,
             'confidence_score': s.confidence_score,
             'recommendation': s.recommendation,
+            'pre_scan_state': s.pre_scan_state or 'Not recorded',
+            'pulse_regularity': s.pulse_regularity or 'Not recorded',
+            'prv_ms': s.prv_ms or 0,
+            'scan_quality': s.scan_quality or 'Not recorded',
             'scanned_at': s.scanned_at.strftime('%Y-%m-%d %H:%M:%S')
         })
 
@@ -146,5 +214,9 @@ def get_scan(scan_id):
         'condition': s.condition,
         'confidence_score': s.confidence_score,
         'recommendation': s.recommendation,
+        'pre_scan_state': s.pre_scan_state or 'Not recorded',
+        'pulse_regularity': s.pulse_regularity or 'Not recorded',
+        'prv_ms': s.prv_ms or 0,
+        'scan_quality': s.scan_quality or 'Not recorded',
         'scanned_at': s.scanned_at.strftime('%Y-%m-%d %H:%M:%S')
     }), 200

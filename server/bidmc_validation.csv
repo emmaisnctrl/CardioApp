@@ -1,0 +1,849 @@
+record,start_s,ref_hr,bb_125,fft_125,old_125,passed_125,cv_125,rmssd_125,reg_125,bb_20,passed_20,cv_20,rmssd_20,reg_20
+bidmc01,0,93.9,94.0,94.3,94.0,True,0.013,12.5,Regular,94.0,True,0.012,12.5,Regular
+bidmc01,30,92.2,89.0,91.6,89.0,True,0.15,144.4,Slightly variable,89.0,True,0.15,144.4,Slightly variable
+bidmc01,60,90.7,91.0,91.1,91.0,True,0.015,14.9,Regular,91.0,True,0.015,14.7,Regular
+bidmc01,90,92.2,88.3,92.9,86.0,True,0.24,193.0,Slightly variable,88.3,True,0.243,198.1,Slightly variable
+bidmc01,120,91.2,91.0,90.6,91.0,True,0.027,29.0,Regular,91.0,True,0.027,29.4,Regular
+bidmc01,150,91.5,91.4,91.1,91.4,True,0.009,8.4,Regular,91.3,True,0.01,10.2,Regular
+bidmc01,180,91.1,91.2,91.6,91.2,True,0.045,47.6,Regular,91.2,True,0.045,47.6,Regular
+bidmc01,210,91.0,90.9,90.6,90.9,True,0.009,8.9,Regular,90.9,True,0.009,8.9,Regular
+bidmc01,240,91.0,91.3,91.1,91.3,True,0.009,9.1,Regular,91.3,True,0.009,9.1,Regular
+bidmc01,270,91.0,91.3,91.1,91.3,True,0.011,10.3,Regular,91.3,True,0.012,11.1,Regular
+bidmc01,300,91.3,91.3,91.1,91.3,True,0.034,37.1,Regular,91.3,True,0.033,35.6,Regular
+bidmc01,330,91.2,91.4,91.1,91.4,True,0.064,72.0,Regular,91.4,True,0.064,72.1,Regular
+bidmc01,360,91.1,91.0,91.1,91.0,True,0.013,12.7,Regular,91.0,True,0.013,12.4,Regular
+bidmc01,390,90.3,90.6,90.6,90.5,True,0.08,80.5,Regular,90.6,True,0.08,80.3,Regular
+bidmc01,420,90.5,90.6,90.2,90.6,True,0.012,10.0,Regular,90.6,True,0.012,10.9,Regular
+bidmc01,450,90.8,90.6,90.6,90.6,True,0.011,10.0,Regular,90.6,True,0.011,10.0,Regular
+bidmc02,0,91.7,90.9,90.6,91.1,True,0.025,25.8,Regular,90.9,True,0.025,25.6,Regular
+bidmc02,30,90.9,90.7,90.6,90.7,True,0.024,25.3,Regular,90.7,True,0.023,24.3,Regular
+bidmc02,60,91.8,92.1,92.9,92.1,True,0.026,26.9,Regular,92.1,True,0.025,26.5,Regular
+bidmc02,90,89.7,89.9,89.3,89.9,True,0.028,29.4,Regular,89.9,True,0.028,30.2,Regular
+bidmc02,120,91.5,91.1,91.1,91.1,True,0.03,34.1,Regular,91.1,True,0.031,35.9,Regular
+bidmc02,150,91.2,91.5,92.0,91.5,True,0.027,32.5,Regular,91.5,True,0.027,31.9,Regular
+bidmc02,180,90.2,88.3,90.6,90.4,True,0.15,143.8,Regular,88.3,True,0.148,141.2,Regular
+bidmc02,210,91.7,91.7,92.5,91.7,True,0.034,35.5,Regular,91.7,True,0.035,37.5,Regular
+bidmc02,240,90.3,90.7,90.6,90.6,True,0.025,23.0,Regular,90.7,True,0.026,22.9,Regular
+bidmc02,270,89.4,88.3,87.9,88.3,True,0.027,26.8,Regular,88.3,True,0.027,27.1,Regular
+bidmc02,300,90.6,91.5,92.0,91.5,True,0.024,23.8,Regular,91.5,True,0.025,23.9,Regular
+bidmc02,330,91.8,91.5,91.6,91.5,True,0.028,31.3,Regular,91.5,True,0.028,31.3,Regular
+bidmc02,360,92.6,92.6,92.5,92.6,True,0.035,36.4,Regular,92.6,True,0.036,37.5,Regular
+bidmc02,390,90.8,90.5,90.2,90.5,True,0.032,33.9,Regular,90.5,True,0.032,33.7,Regular
+bidmc02,420,91.2,91.8,91.6,91.8,True,0.037,37.4,Regular,91.8,True,0.04,39.9,Regular
+bidmc02,450,92.1,91.2,91.1,91.2,True,0.039,37.8,Regular,91.1,True,0.039,37.0,Regular
+bidmc03,0,76.1,75.7,76.0,75.7,True,0.007,7.1,Regular,75.7,True,0.007,7.9,Regular
+bidmc03,30,75.7,75.9,76.0,75.9,True,0.06,82.7,Regular,75.9,True,0.06,82.7,Regular
+bidmc03,60,76.6,76.7,76.9,76.7,True,0.01,7.9,Regular,76.7,True,0.01,8.2,Regular
+bidmc03,90,77.1,77.2,77.4,77.2,True,0.005,6.4,Regular,77.2,True,0.005,7.2,Regular
+bidmc03,120,78.9,76.8,76.9,76.8,True,0.008,9.2,Regular,76.8,True,0.008,9.1,Regular
+bidmc03,150,75.9,75.9,76.0,75.9,True,0.085,109.9,Regular,75.9,True,0.085,109.9,Regular
+bidmc03,180,76.3,76.6,76.4,76.6,True,0.124,166.8,Regular,76.6,True,0.124,166.8,Regular
+bidmc03,210,76.0,75.7,75.5,75.7,True,0.008,4.7,Regular,75.7,True,0.008,4.2,Regular
+bidmc03,240,75.5,75.5,75.5,75.5,True,0.006,6.5,Regular,75.5,True,0.006,6.5,Regular
+bidmc03,270,75.9,75.7,75.5,75.7,True,0.006,6.9,Regular,75.7,True,0.006,6.9,Regular
+bidmc03,300,76.2,75.5,76.4,75.5,True,0.098,114.0,Regular,75.5,True,0.097,113.1,Regular
+bidmc03,330,81.3,76.6,76.4,76.6,True,0.006,7.2,Regular,76.6,True,0.006,7.2,Regular
+bidmc03,360,76.3,76.4,76.4,76.4,True,0.012,13.9,Regular,76.4,True,0.011,14.2,Regular
+bidmc03,390,76.7,76.8,76.9,76.9,True,0.007,4.9,Regular,76.8,True,0.007,6.3,Regular
+bidmc03,420,76.4,75.8,76.4,76.2,True,0.129,190.4,Regular,75.8,True,0.129,190.0,Regular
+bidmc03,450,76.0,76.0,76.0,76.0,True,0.006,7.9,Regular,76.0,True,0.007,8.6,Regular
+bidmc04,0,94.1,88.9,93.8,88.9,True,0.207,177.7,Slightly variable,88.9,True,0.207,177.7,Slightly variable
+bidmc04,30,93.8,87.4,93.8,87.4,True,0.245,248.1,Slightly variable,87.4,True,0.245,248.6,Slightly variable
+bidmc04,60,94.0,94.2,94.3,94.2,True,0.007,7.2,Regular,94.2,True,0.007,7.2,Regular
+bidmc04,90,94.3,94.4,94.3,94.3,True,0.04,43.5,Regular,94.4,True,0.04,43.2,Regular
+bidmc04,120,95.3,88.6,95.2,88.6,True,0.253,255.6,Possibly irregular,88.6,True,0.253,255.6,Possibly irregular
+bidmc04,150,95.8,92.9,95.7,92.9,True,0.152,140.7,Slightly variable,93.0,True,0.152,140.7,Slightly variable
+bidmc04,180,93.3,93.4,92.9,93.4,True,0.028,28.3,Regular,93.4,True,0.028,28.1,Regular
+bidmc04,210,94.6,92.2,94.3,94.5,True,0.128,117.3,Regular,92.2,True,0.128,117.3,Regular
+bidmc04,240,93.2,91.0,93.4,91.0,True,0.151,142.7,Slightly variable,91.0,True,0.151,142.7,Slightly variable
+bidmc04,270,93.7,93.8,93.4,93.8,True,0.041,42.9,Regular,93.8,True,0.042,45.1,Regular
+bidmc04,300,92.9,92.7,92.5,92.7,True,0.01,8.7,Regular,92.7,True,0.012,11.3,Regular
+bidmc04,330,92.1,84.5,94.3,75.6,False,0.23,132.1,Slightly variable,84.5,False,0.231,131.8,Slightly variable
+bidmc04,360,90.3,89.8,89.7,89.8,True,0.035,40.1,Regular,89.8,True,0.035,39.6,Regular
+bidmc04,390,89.0,84.2,88.8,84.2,True,0.219,227.8,Slightly variable,84.2,True,0.219,227.8,Slightly variable
+bidmc04,420,88.1,87.3,86.5,87.3,True,0.026,9.3,Regular,87.3,True,0.025,8.1,Regular
+bidmc04,450,83.9,79.6,83.8,78.3,True,0.193,195.5,Slightly variable,79.6,True,0.194,196.0,Slightly variable
+bidmc05,0,98.1,98.1,98.4,98.1,True,0.012,10.3,Regular,98.1,True,0.012,9.7,Regular
+bidmc05,30,98.0,98.1,98.4,98.1,True,0.012,10.0,Regular,98.1,True,0.013,12.2,Regular
+bidmc05,60,98.0,98.1,98.4,98.1,True,0.018,17.5,Regular,98.1,True,0.017,16.2,Regular
+bidmc05,90,97.5,97.6,97.5,97.3,True,0.017,16.4,Regular,97.6,True,0.017,16.4,Regular
+bidmc05,120,97.7,98.4,98.0,87.8,True,0.046,47.1,Regular,98.4,True,0.045,46.9,Regular
+bidmc05,150,98.0,97.0,98.0,94.8,True,0.083,73.2,Regular,97.0,True,0.085,76.5,Regular
+bidmc05,180,98.4,98.3,98.4,98.3,True,0.013,10.4,Regular,98.3,True,0.013,10.4,Regular
+bidmc05,210,98.4,98.7,98.4,98.7,True,0.021,14.8,Regular,98.7,True,0.022,15.7,Regular
+bidmc05,240,98.3,98.7,98.0,98.8,True,0.022,13.1,Regular,98.7,True,0.022,12.9,Regular
+bidmc05,270,98.7,98.0,98.0,98.0,True,0.014,12.0,Regular,98.1,True,0.016,14.6,Regular
+bidmc05,300,98.1,98.2,98.0,98.2,True,0.011,8.4,Regular,98.2,True,0.011,8.4,Regular
+bidmc05,330,98.2,98.1,98.0,98.1,True,0.014,13.5,Regular,98.1,True,0.014,13.8,Regular
+bidmc05,360,97.4,97.2,97.0,97.3,True,0.01,8.4,Regular,97.2,True,0.01,8.7,Regular
+bidmc05,390,98.1,98.3,98.4,98.2,True,0.014,9.2,Regular,98.3,True,0.013,8.3,Regular
+bidmc05,420,98.6,98.5,98.4,98.5,True,0.014,14.2,Regular,98.5,True,0.013,12.7,Regular
+bidmc05,450,99.1,99.0,99.3,99.0,True,0.013,11.9,Regular,99.0,True,0.012,9.3,Regular
+bidmc06,0,81.1,81.2,81.0,81.2,True,0.01,8.3,Regular,81.2,True,0.01,8.3,Regular
+bidmc06,30,82.0,82.0,81.9,82.0,True,0.008,8.5,Regular,82.0,True,0.008,8.5,Regular
+bidmc06,60,81.8,81.9,81.9,81.9,True,0.01,9.0,Regular,81.9,True,0.01,9.6,Regular
+bidmc06,90,82.0,81.7,81.9,81.7,True,0.01,9.9,Regular,81.7,True,0.01,9.9,Regular
+bidmc06,120,82.0,82.4,82.4,82.4,True,0.011,7.9,Regular,82.4,True,0.011,8.1,Regular
+bidmc06,150,82.4,82.2,82.4,82.2,True,0.007,8.2,Regular,82.2,True,0.007,8.1,Regular
+bidmc06,180,82.0,82.0,81.9,82.0,True,0.01,9.9,Regular,82.0,True,0.01,10.9,Regular
+bidmc06,210,81.7,81.7,81.5,81.7,True,0.008,8.5,Regular,81.7,True,0.007,7.5,Regular
+bidmc06,240,81.6,81.3,81.0,81.3,True,0.012,13.4,Regular,81.3,True,0.012,14.0,Regular
+bidmc06,270,81.2,81.3,81.0,81.3,True,0.008,8.0,Regular,81.3,True,0.007,6.6,Regular
+bidmc06,300,84.3,82.0,82.4,82.0,True,0.04,49.8,Regular,82.0,True,0.04,49.8,Regular
+bidmc06,330,81.2,81.3,81.0,81.3,True,0.007,8.5,Regular,81.3,True,0.007,8.5,Regular
+bidmc06,360,81.1,81.1,81.0,81.1,True,0.007,8.6,Regular,81.1,True,0.007,8.6,Regular
+bidmc06,390,81.2,81.6,81.5,81.6,True,0.008,8.7,Regular,81.6,True,0.008,9.1,Regular
+bidmc06,420,81.7,81.5,81.5,81.5,True,0.008,8.5,Regular,81.5,True,0.008,8.5,Regular
+bidmc06,450,82.0,82.0,81.9,82.0,True,0.008,8.1,Regular,82.0,True,0.008,8.1,Regular
+bidmc07,0,90.0,90.1,90.2,90.1,True,0.008,8.1,Regular,90.1,True,0.008,9.0,Regular
+bidmc07,30,90.1,90.3,90.2,90.3,True,0.01,9.1,Regular,90.3,True,0.01,9.5,Regular
+bidmc07,60,90.0,90.2,90.2,90.2,True,0.008,8.4,Regular,90.2,True,0.009,8.5,Regular
+bidmc07,90,90.0,89.9,90.2,89.9,True,0.009,9.8,Regular,89.9,True,0.008,8.9,Regular
+bidmc07,120,90.0,90.1,90.2,90.1,True,0.009,7.7,Regular,90.1,True,0.009,7.7,Regular
+bidmc07,150,90.1,90.3,90.2,90.3,True,0.008,8.1,Regular,90.3,True,0.007,7.0,Regular
+bidmc07,180,90.0,90.1,90.2,90.1,True,0.009,9.2,Regular,90.1,True,0.009,9.2,Regular
+bidmc07,210,90.0,90.1,90.2,90.1,True,0.009,8.9,Regular,90.1,True,0.01,9.3,Regular
+bidmc07,240,89.9,89.8,89.7,89.8,True,0.008,8.4,Regular,89.8,True,0.009,8.8,Regular
+bidmc07,270,90.2,90.2,90.2,90.2,True,0.007,6.2,Regular,90.2,True,0.007,6.2,Regular
+bidmc07,300,90.0,90.2,90.2,90.2,True,0.008,8.7,Regular,90.2,True,0.008,9.0,Regular
+bidmc07,330,90.2,90.4,90.2,90.4,True,0.008,7.2,Regular,90.4,True,0.009,8.3,Regular
+bidmc07,360,90.5,90.4,90.6,90.4,True,0.008,8.3,Regular,90.4,True,0.009,8.7,Regular
+bidmc07,390,90.6,90.6,90.6,90.6,True,0.008,7.2,Regular,90.6,True,0.008,7.2,Regular
+bidmc07,420,90.0,90.3,90.2,90.3,True,0.009,7.9,Regular,90.3,True,0.009,7.9,Regular
+bidmc07,450,90.0,90.3,90.2,90.3,True,0.009,10.0,Regular,90.3,True,0.009,9.2,Regular
+bidmc08,0,101.4,101.1,100.7,98.8,True,0.058,56.7,Regular,101.1,True,0.059,58.1,Regular
+bidmc08,30,100.4,100.2,100.3,100.2,True,0.011,10.3,Regular,100.2,True,0.012,10.8,Regular
+bidmc08,60,100.0,100.2,100.3,100.2,True,0.009,8.9,Regular,100.2,True,0.009,8.9,Regular
+bidmc08,90,100.0,100.0,100.3,99.9,True,0.009,8.4,Regular,100.0,True,0.009,8.4,Regular
+bidmc08,120,99.9,100.0,100.3,100.1,True,0.011,11.5,Regular,100.0,True,0.011,10.7,Regular
+bidmc08,150,100.1,99.8,99.8,99.8,True,0.011,11.4,Regular,99.8,True,0.01,10.5,Regular
+bidmc08,180,100.0,99.7,99.3,99.6,True,0.012,11.9,Regular,99.7,True,0.011,11.5,Regular
+bidmc08,210,99.9,100.0,100.3,100.0,True,0.012,11.9,Regular,100.0,True,0.012,11.1,Regular
+bidmc08,240,100.0,100.3,99.8,98.0,True,0.061,61.0,Regular,100.3,True,0.061,61.0,Regular
+bidmc08,270,100.4,99.5,99.3,99.5,True,0.011,11.6,Regular,99.5,True,0.011,11.6,Regular
+bidmc08,300,99.5,99.2,99.3,99.2,True,0.01,10.1,Regular,99.2,True,0.011,10.7,Regular
+bidmc08,330,99.1,99.1,98.9,99.1,True,0.013,12.2,Regular,99.1,True,0.013,11.8,Regular
+bidmc08,360,99.6,99.7,99.3,99.7,True,0.012,11.8,Regular,99.7,True,0.012,12.1,Regular
+bidmc08,390,100.0,99.6,99.3,99.6,True,0.011,10.1,Regular,99.6,True,0.012,10.9,Regular
+bidmc08,420,99.8,99.6,99.3,99.6,True,0.05,49.6,Regular,99.7,True,0.05,49.9,Regular
+bidmc08,450,99.3,99.1,99.3,99.1,True,0.011,11.1,Regular,99.1,True,0.012,11.7,Regular
+bidmc09,0,77.0,77.2,77.4,77.2,True,0.007,9.1,Regular,77.2,True,0.007,9.1,Regular
+bidmc09,30,77.4,77.4,77.4,77.4,True,0.009,8.5,Regular,77.4,True,0.01,9.2,Regular
+bidmc09,60,77.1,77.3,76.9,77.3,True,0.008,9.4,Regular,77.3,True,0.008,9.4,Regular
+bidmc09,90,77.0,76.9,76.9,76.9,True,0.007,7.5,Regular,76.9,True,0.007,7.5,Regular
+bidmc09,120,77.0,77.0,76.9,77.0,True,0.008,9.6,Regular,77.0,True,0.008,9.6,Regular
+bidmc09,150,77.0,76.6,76.4,76.6,True,0.006,7.0,Regular,76.6,True,0.005,6.7,Regular
+bidmc09,180,76.2,76.4,76.4,76.4,True,0.007,7.2,Regular,76.4,True,0.008,8.2,Regular
+bidmc09,210,76.0,76.0,76.0,76.0,True,0.005,6.3,Regular,76.0,True,0.005,5.8,Regular
+bidmc09,240,77.3,74.9,77.4,77.2,True,0.118,137.5,Regular,74.9,True,0.118,137.5,Regular
+bidmc09,270,77.0,74.6,76.4,76.9,True,0.112,128.5,Regular,74.5,True,0.112,128.5,Regular
+bidmc09,300,76.3,76.3,76.4,76.3,True,0.007,7.7,Regular,76.3,True,0.007,8.0,Regular
+bidmc09,330,76.8,74.7,77.8,76.9,True,0.114,131.3,Regular,74.7,True,0.114,131.3,Regular
+bidmc09,360,76.1,76.4,76.4,76.4,True,0.007,6.3,Regular,76.4,True,0.006,7.1,Regular
+bidmc09,390,76.7,76.6,76.4,76.6,True,0.01,12.2,Regular,76.6,True,0.011,13.4,Regular
+bidmc09,420,76.9,76.7,76.9,76.7,True,0.008,8.5,Regular,76.7,True,0.007,7.8,Regular
+bidmc09,450,76.0,76.2,76.4,76.2,True,0.007,9.5,Regular,76.3,True,0.007,9.4,Regular
+bidmc10,0,87.0,74.4,83.8,79.2,False,0.254,249.8,Possibly irregular,74.4,False,0.254,249.5,Possibly irregular
+bidmc10,30,81.7,81.9,81.9,81.9,True,0.012,11.4,Regular,81.9,True,0.011,10.2,Regular
+bidmc10,60,82.0,82.2,82.4,82.2,True,0.009,11.2,Regular,82.2,True,0.009,11.1,Regular
+bidmc10,90,82.3,80.2,81.9,80.2,True,0.124,118.6,Regular,80.2,True,0.124,118.6,Regular
+bidmc10,120,82.7,82.7,83.3,82.7,True,0.025,28.9,Regular,82.7,True,0.025,29.4,Regular
+bidmc10,150,82.0,80.4,83.3,80.3,True,0.159,176.5,Slightly variable,80.4,True,0.159,176.5,Slightly variable
+bidmc10,180,82.6,82.1,81.9,82.1,True,0.02,23.9,Regular,82.1,True,0.02,23.9,Regular
+bidmc10,210,81.9,82.1,82.4,82.1,True,0.015,15.3,Regular,82.1,True,0.015,15.3,Regular
+bidmc10,240,83.0,83.2,83.3,83.2,True,0.019,15.1,Regular,83.2,True,0.019,14.9,Regular
+bidmc10,270,80.9,77.8,79.7,80.1,True,0.163,160.1,Slightly variable,77.8,True,0.166,163.7,Slightly variable
+bidmc10,300,83.1,80.4,81.9,80.4,True,0.183,202.4,Slightly variable,80.4,True,0.183,202.4,Slightly variable
+bidmc10,330,80.6,80.3,80.1,80.3,True,0.009,8.3,Regular,80.3,True,0.009,9.4,Regular
+bidmc10,360,80.7,81.2,81.5,81.2,True,0.017,7.6,Regular,81.1,True,0.017,7.5,Regular
+bidmc10,390,81.4,81.3,81.5,81.3,True,0.061,79.1,Regular,81.3,True,0.061,79.2,Regular
+bidmc10,420,81.5,81.2,82.4,81.2,True,0.024,13.7,Regular,81.2,True,0.024,14.1,Regular
+bidmc10,450,80.6,78.7,81.5,81.5,True,0.16,137.1,Slightly variable,78.7,True,0.16,137.1,Slightly variable
+bidmc11,0,92.9,92.1,91.1,92.1,True,0.034,19.3,Regular,92.1,True,0.035,19.8,Regular
+bidmc11,30,91.0,91.4,90.6,91.4,True,0.025,14.9,Regular,91.4,True,0.025,14.7,Regular
+bidmc11,60,94.4,94.2,93.4,94.2,True,0.03,25.3,Regular,94.2,True,0.031,25.8,Regular
+bidmc11,90,92.3,91.6,91.6,91.6,True,0.019,18.1,Regular,91.6,True,0.019,18.6,Regular
+bidmc11,120,93.0,93.2,94.8,94.1,True,0.034,18.7,Regular,93.2,True,0.034,18.7,Regular
+bidmc11,150,93.0,92.9,92.9,92.9,True,0.021,14.6,Regular,92.9,True,0.021,14.8,Regular
+bidmc11,180,92.1,92.4,91.6,93.3,True,0.023,15.1,Regular,92.4,True,0.023,15.1,Regular
+bidmc11,210,96.1,97.6,96.6,97.6,True,0.041,14.1,Regular,97.6,True,0.041,13.9,Regular
+bidmc11,240,93.3,91.7,91.1,91.7,True,0.023,13.8,Regular,91.7,True,0.022,13.7,Regular
+bidmc11,270,91.9,91.9,91.6,91.9,True,0.02,15.3,Regular,91.9,True,0.019,13.7,Regular
+bidmc11,300,90.7,90.7,89.3,90.7,True,0.03,15.8,Regular,90.7,True,0.031,16.5,Regular
+bidmc11,330,98.4,97.3,97.5,97.3,True,0.023,12.6,Regular,97.3,True,0.023,11.3,Regular
+bidmc11,360,93.9,93.5,94.3,93.5,True,0.021,18.7,Regular,93.5,True,0.021,18.9,Regular
+bidmc11,390,91.2,90.3,90.2,90.3,True,0.025,14.0,Regular,90.3,True,0.025,14.3,Regular
+bidmc11,420,91.3,91.4,91.6,91.4,True,0.022,17.0,Regular,91.4,True,0.021,15.3,Regular
+bidmc11,450,91.9,91.6,92.0,91.6,True,0.022,15.5,Regular,91.6,True,0.022,15.5,Regular
+bidmc12,0,91.9,92.0,92.5,92.0,True,0.014,10.2,Regular,92.0,True,0.014,10.2,Regular
+bidmc12,30,91.3,91.2,91.1,91.2,True,0.008,7.8,Regular,91.2,True,0.008,7.8,Regular
+bidmc12,60,90.5,90.3,90.6,90.3,True,0.013,9.4,Regular,90.3,True,0.013,9.8,Regular
+bidmc12,90,90.9,91.1,91.1,91.1,True,0.009,9.6,Regular,91.1,True,0.009,9.6,Regular
+bidmc12,120,91.3,91.0,90.6,91.0,True,0.011,11.3,Regular,91.0,True,0.01,10.3,Regular
+bidmc12,150,91.7,91.4,91.6,91.4,True,0.014,11.2,Regular,91.4,True,0.013,10.9,Regular
+bidmc12,180,92.1,86.3,92.5,91.1,True,0.217,131.0,Slightly variable,86.3,True,0.218,131.2,Slightly variable
+bidmc12,210,93.5,92.5,92.9,92.5,True,0.023,25.6,Regular,92.5,True,0.025,26.8,Regular
+bidmc12,240,92.1,93.6,93.8,93.6,True,0.04,19.3,Regular,93.6,True,0.04,18.5,Regular
+bidmc12,270,98.7,98.7,98.9,98.7,True,0.01,10.8,Regular,98.7,True,0.011,11.1,Regular
+bidmc12,300,98.3,97.7,97.5,97.7,True,0.017,15.8,Regular,97.7,True,0.016,14.7,Regular
+bidmc12,330,96.1,95.7,95.2,95.7,True,0.019,18.8,Regular,95.7,True,0.018,17.8,Regular
+bidmc12,360,94.3,93.5,93.4,93.5,True,0.018,17.0,Regular,93.5,True,0.017,16.4,Regular
+bidmc12,390,92.3,91.9,92.0,91.9,True,0.018,20.7,Regular,91.9,True,0.018,20.1,Regular
+bidmc12,420,91.5,91.4,91.1,91.4,True,0.018,19.7,Regular,91.4,True,0.018,19.7,Regular
+bidmc12,450,91.7,91.3,91.6,91.2,True,0.017,17.7,Regular,91.3,True,0.018,19.8,Regular
+bidmc13,0,66.8,66.7,66.8,66.7,True,0.012,18.1,Regular,66.7,True,0.012,18.1,Regular
+bidmc13,30,67.2,67.2,67.3,67.2,True,0.013,15.9,Regular,67.2,True,0.013,15.9,Regular
+bidmc13,60,66.7,66.8,66.8,66.8,True,0.01,14.3,Regular,66.8,True,0.01,14.3,Regular
+bidmc13,90,66.9,66.6,66.4,68.9,True,0.008,11.3,Regular,66.6,True,0.008,11.3,Regular
+bidmc13,120,66.0,66.2,66.4,70.8,True,0.021,30.5,Regular,66.2,True,0.021,30.5,Regular
+bidmc13,150,66.7,66.5,66.4,66.5,True,0.01,16.0,Regular,66.5,True,0.011,16.6,Regular
+bidmc13,180,66.7,66.7,66.8,66.7,True,0.009,14.0,Regular,66.7,True,0.008,11.0,Regular
+bidmc13,210,67.0,67.0,67.3,67.0,True,0.086,136.1,Regular,67.0,True,0.088,139.9,Regular
+bidmc13,240,67.0,66.7,66.8,66.7,True,0.009,13.0,Regular,66.7,True,0.009,13.0,Regular
+bidmc13,270,67.0,67.0,66.8,67.0,True,0.008,8.8,Regular,67.0,True,0.008,8.8,Regular
+bidmc13,300,66.4,66.4,66.4,66.4,True,0.014,18.7,Regular,66.4,True,0.013,17.1,Regular
+bidmc13,330,67.0,67.0,67.3,67.0,True,0.016,25.0,Regular,67.0,True,0.017,25.6,Regular
+bidmc13,360,67.0,67.0,66.8,67.0,True,0.066,103.5,Regular,67.0,True,0.066,103.7,Regular
+bidmc13,390,66.7,66.6,66.4,66.6,True,0.016,24.8,Regular,66.6,True,0.017,25.3,Regular
+bidmc13,420,67.0,66.8,66.8,66.8,True,0.011,16.5,Regular,66.8,True,0.011,17.6,Regular
+bidmc13,450,67.0,66.6,66.8,69.6,True,0.022,28.9,Regular,66.5,True,0.022,28.7,Regular
+bidmc14,0,94.1,93.9,94.3,93.9,True,0.027,23.0,Regular,93.9,True,0.027,22.2,Regular
+bidmc14,30,94.7,92.4,94.3,94.7,True,0.151,154.4,Slightly variable,92.4,True,0.152,154.4,Slightly variable
+bidmc14,60,95.1,90.4,95.2,94.9,True,0.205,198.5,Slightly variable,90.4,True,0.204,195.8,Slightly variable
+bidmc14,90,95.3,90.2,94.8,95.1,True,0.202,170.3,Slightly variable,90.1,True,0.203,171.0,Slightly variable
+bidmc14,120,95.3,90.9,95.2,93.2,True,0.219,215.6,Slightly variable,90.9,True,0.219,215.7,Slightly variable
+bidmc14,150,94.9,95.0,94.8,95.0,True,0.02,18.0,Regular,95.1,True,0.02,17.9,Regular
+bidmc14,180,95.0,91.4,94.8,94.4,True,0.18,181.7,Slightly variable,89.8,True,0.241,252.9,Slightly variable
+bidmc14,210,94.2,94.4,94.3,94.4,True,0.036,34.9,Regular,94.4,True,0.038,35.8,Regular
+bidmc14,240,95.9,86.8,95.7,93.6,True,0.283,221.6,Possibly irregular,86.8,True,0.283,221.9,Possibly irregular
+bidmc14,270,95.4,90.7,95.2,95.3,True,0.183,166.2,Slightly variable,90.7,True,0.183,166.2,Slightly variable
+bidmc14,300,95.1,93.3,95.2,95.7,True,0.158,156.0,Slightly variable,93.3,True,0.158,156.0,Slightly variable
+bidmc14,330,95.3,93.2,95.2,94.1,True,0.14,90.0,Regular,93.2,True,0.142,90.0,Regular
+bidmc14,360,96.1,93.4,95.7,95.6,True,0.167,164.0,Slightly variable,93.4,True,0.167,164.7,Slightly variable
+bidmc14,390,94.7,87.9,95.2,92.5,True,0.272,282.6,Possibly irregular,87.9,True,0.239,237.2,Slightly variable
+bidmc14,420,95.3,84.0,95.7,97.5,False,0.281,194.3,Possibly irregular,84.0,False,0.282,206.0,Possibly irregular
+bidmc14,450,96.2,93.6,96.1,95.8,True,0.147,136.1,Regular,93.6,True,0.147,136.2,Regular
+bidmc15,0,108.9,108.7,108.5,108.7,True,0.02,16.7,Regular,108.7,True,0.02,17.2,Regular
+bidmc15,30,109.0,109.0,109.4,109.0,True,0.018,16.7,Regular,109.0,True,0.018,16.7,Regular
+bidmc15,60,108.3,108.1,108.0,108.1,True,0.014,11.3,Regular,108.1,True,0.013,10.8,Regular
+bidmc15,90,108.4,108.3,108.9,108.3,True,0.031,30.7,Regular,108.3,True,0.031,30.3,Regular
+bidmc15,120,108.1,107.8,108.0,107.8,True,0.015,12.9,Regular,107.8,True,0.014,12.1,Regular
+bidmc15,150,107.4,107.2,107.1,107.2,True,0.02,16.6,Regular,107.2,True,0.019,15.7,Regular
+bidmc15,180,107.7,107.5,107.6,107.5,True,0.016,13.6,Regular,107.5,True,0.016,14.1,Regular
+bidmc15,210,107.0,107.0,107.1,107.0,True,0.024,23.3,Regular,107.0,True,0.023,22.3,Regular
+bidmc15,240,107.1,107.1,107.1,107.0,True,0.015,13.4,Regular,107.0,True,0.016,14.0,Regular
+bidmc15,270,107.1,107.3,107.6,107.3,True,0.021,18.7,Regular,107.3,True,0.021,18.7,Regular
+bidmc15,300,107.2,107.1,107.1,107.1,True,0.014,12.0,Regular,107.2,True,0.014,12.0,Regular
+bidmc15,330,106.5,106.3,106.2,106.3,True,0.014,11.8,Regular,106.3,True,0.014,11.8,Regular
+bidmc15,360,106.5,106.8,107.1,106.8,True,0.017,15.3,Regular,106.8,True,0.017,15.3,Regular
+bidmc15,390,106.2,106.0,106.2,106.0,True,0.012,8.8,Regular,106.0,True,0.012,8.4,Regular
+bidmc15,420,105.8,105.7,105.3,105.7,True,0.015,13.0,Regular,105.7,True,0.015,13.4,Regular
+bidmc15,450,106.8,106.9,107.1,106.8,True,0.014,11.2,Regular,106.9,True,0.014,10.9,Regular
+bidmc16,0,110.1,110.3,109.9,110.3,True,0.008,6.2,Regular,110.3,True,0.008,6.2,Regular
+bidmc16,30,111.1,111.0,111.2,111.0,True,0.032,29.7,Regular,111.0,True,0.032,29.6,Regular
+bidmc16,60,110.0,109.8,109.9,109.8,True,0.035,32.8,Regular,109.7,True,0.035,32.9,Regular
+bidmc16,90,110.9,111.0,111.2,111.1,True,0.011,8.5,Regular,111.0,True,0.011,8.5,Regular
+bidmc16,120,110.5,110.6,110.3,110.6,True,0.009,7.5,Regular,110.6,True,0.009,7.7,Regular
+bidmc16,150,111.2,111.1,111.2,111.1,True,0.007,6.3,Regular,111.1,True,0.007,6.3,Regular
+bidmc16,180,108.3,105.7,109.9,105.7,True,0.179,145.3,Slightly variable,105.7,True,0.179,145.2,Slightly variable
+bidmc16,210,110.0,110.1,109.9,110.1,True,0.04,37.4,Regular,110.1,True,0.04,37.3,Regular
+bidmc16,240,109.3,109.3,108.9,109.3,True,0.009,8.2,Regular,109.3,True,0.009,8.1,Regular
+bidmc16,270,109.0,109.1,108.9,109.1,True,0.007,6.7,Regular,109.1,True,0.008,7.3,Regular
+bidmc16,300,109.0,109.2,108.9,109.2,True,0.009,7.5,Regular,109.2,True,0.009,7.5,Regular
+bidmc16,330,109.2,109.2,109.4,109.2,True,0.063,60.5,Regular,109.2,True,0.062,59.3,Regular
+bidmc16,360,109.0,108.9,108.9,108.9,True,0.053,50.4,Regular,108.9,True,0.054,51.6,Regular
+bidmc16,390,108.5,108.6,108.5,108.6,True,0.01,8.5,Regular,108.6,True,0.01,8.5,Regular
+bidmc16,420,108.0,108.3,108.5,108.3,True,0.008,7.7,Regular,108.3,True,0.008,7.8,Regular
+bidmc16,450,108.0,107.9,108.0,107.8,True,0.008,8.4,Regular,107.9,True,0.008,8.4,Regular
+bidmc17,0,81.6,81.7,78.7,81.7,True,0.193,231.3,Slightly variable,81.7,True,0.193,231.2,Slightly variable
+bidmc17,30,85.2,86.7,82.9,86.7,True,0.229,231.9,Slightly variable,86.7,True,0.229,231.9,Slightly variable
+bidmc17,60,85.1,86.7,86.1,87.7,True,0.169,171.4,Slightly variable,85.3,True,0.183,192.3,Slightly variable
+bidmc17,90,83.0,80.8,75.1,80.8,True,0.206,219.5,Slightly variable,80.8,True,0.206,220.2,Slightly variable
+bidmc17,120,81.5,82.7,77.8,85.0,True,0.263,302.5,Possibly irregular,82.7,True,0.263,302.6,Possibly irregular
+bidmc17,150,80.1,71.2,77.8,78.1,True,0.291,419.2,Possibly irregular,71.2,True,0.291,419.2,Possibly irregular
+bidmc17,180,79.0,78.7,77.4,78.7,True,0.19,220.4,Slightly variable,78.7,True,0.19,220.7,Slightly variable
+bidmc17,210,81.1,79.8,76.9,82.1,True,0.193,222.4,Slightly variable,79.8,True,0.193,222.4,Slightly variable
+bidmc17,240,79.0,74.8,76.4,79.5,True,0.216,300.2,Slightly variable,74.8,True,0.217,301.7,Slightly variable
+bidmc17,270,81.5,80.4,75.1,80.4,True,0.229,264.5,Slightly variable,80.4,True,0.229,264.3,Slightly variable
+bidmc17,300,80.9,74.2,77.4,81.0,True,0.23,294.0,Slightly variable,74.2,True,0.23,294.0,Slightly variable
+bidmc17,330,80.4,77.8,77.8,77.7,True,0.214,318.2,Slightly variable,77.8,True,0.213,316.8,Slightly variable
+bidmc17,360,77.9,76.2,78.3,78.5,True,0.231,279.2,Slightly variable,76.2,True,0.231,278.8,Slightly variable
+bidmc17,390,79.2,78.0,77.4,80.3,True,0.223,238.1,Slightly variable,78.0,True,0.224,239.4,Slightly variable
+bidmc17,420,81.2,74.3,76.0,81.1,True,0.237,299.3,Slightly variable,74.3,True,0.237,299.3,Slightly variable
+bidmc17,450,79.1,75.5,79.7,80.2,True,0.291,385.7,Possibly irregular,75.5,True,0.291,385.9,Possibly irregular
+bidmc18,0,90.3,90.2,90.2,90.2,True,0.01,8.3,Regular,90.3,True,0.009,7.9,Regular
+bidmc18,30,90.0,90.6,90.6,90.6,True,0.007,6.0,Regular,90.6,True,0.008,7.7,Regular
+bidmc18,60,89.9,89.4,89.7,89.4,True,0.007,6.4,Regular,89.4,True,0.007,6.4,Regular
+bidmc18,90,90.0,90.2,90.2,90.2,True,0.006,6.1,Regular,90.2,True,0.006,6.1,Regular
+bidmc18,120,90.3,90.3,90.2,90.3,True,0.012,9.1,Regular,90.3,True,0.012,9.0,Regular
+bidmc18,150,90.0,90.0,89.7,90.0,True,0.006,5.7,Regular,90.0,True,0.006,5.7,Regular
+bidmc18,180,90.0,90.1,90.2,90.1,True,0.007,6.2,Regular,90.1,True,0.007,6.9,Regular
+bidmc18,210,90.1,90.2,90.2,90.2,True,0.006,5.4,Regular,90.2,True,0.006,5.4,Regular
+bidmc18,240,90.3,90.6,90.6,90.6,True,0.008,7.0,Regular,90.6,True,0.008,7.0,Regular
+bidmc18,270,89.9,89.8,89.7,89.8,True,0.007,5.4,Regular,89.8,True,0.007,5.4,Regular
+bidmc18,300,90.0,89.9,89.7,90.9,True,0.007,6.1,Regular,89.9,True,0.007,6.1,Regular
+bidmc18,330,90.5,90.6,90.6,90.6,True,0.012,8.6,Regular,90.6,True,0.013,9.7,Regular
+bidmc18,360,89.7,89.8,89.7,89.8,True,0.007,6.7,Regular,89.8,True,0.006,5.4,Regular
+bidmc18,390,90.1,90.3,90.2,90.3,True,0.008,6.8,Regular,90.3,True,0.008,6.5,Regular
+bidmc18,420,90.4,90.4,90.2,90.4,True,0.01,5.9,Regular,90.4,True,0.01,5.9,Regular
+bidmc18,450,89.7,89.9,89.7,89.9,True,0.009,8.2,Regular,89.9,True,0.009,7.9,Regular
+bidmc19,0,73.5,74.3,74.2,74.3,True,0.03,39.5,Regular,74.3,True,0.029,37.9,Regular
+bidmc19,30,73.3,72.4,72.3,72.6,True,0.04,51.3,Regular,72.4,True,0.039,50.9,Regular
+bidmc19,60,72.9,73.3,72.3,73.3,True,0.039,47.3,Regular,73.2,True,0.037,44.5,Regular
+bidmc19,90,74.3,73.3,72.8,74.5,True,0.031,33.6,Regular,73.4,True,0.031,34.5,Regular
+bidmc19,120,73.6,73.3,72.8,75.6,True,0.044,48.6,Regular,73.3,True,0.044,47.7,Regular
+bidmc19,150,74.3,74.2,74.2,74.5,True,0.023,27.2,Regular,74.2,True,0.022,26.3,Regular
+bidmc19,180,73.6,72.9,73.2,73.0,True,0.03,38.5,Regular,72.9,True,0.03,39.9,Regular
+bidmc19,210,72.4,72.3,71.4,72.4,True,0.038,46.7,Regular,72.3,True,0.039,48.4,Regular
+bidmc19,240,73.0,73.4,71.9,73.4,True,0.052,59.7,Regular,73.4,True,0.051,58.0,Regular
+bidmc19,270,74.7,73.8,76.0,73.8,True,0.053,40.3,Regular,73.8,True,0.052,39.3,Regular
+bidmc19,300,72.8,72.7,72.3,74.8,True,0.046,60.8,Regular,72.7,True,0.047,61.9,Regular
+bidmc19,330,73.0,73.2,73.2,73.2,True,0.035,43.7,Regular,73.2,True,0.034,40.9,Regular
+bidmc19,360,73.6,74.2,73.2,76.5,True,0.045,52.9,Regular,74.2,True,0.048,57.2,Regular
+bidmc19,390,73.6,72.7,73.2,72.7,True,0.042,49.4,Regular,72.7,True,0.041,48.0,Regular
+bidmc19,420,73.3,73.9,73.2,73.6,True,0.039,48.5,Regular,73.7,True,0.065,94.7,Regular
+bidmc19,450,73.5,73.7,74.6,73.7,True,0.041,47.3,Regular,73.7,True,0.041,48.0,Regular
+bidmc20,0,88.9,88.3,88.8,88.3,True,0.018,18.9,Regular,88.4,True,0.019,20.0,Regular
+bidmc20,30,87.8,88.5,88.3,88.5,True,0.024,18.9,Regular,88.5,True,0.023,16.9,Regular
+bidmc20,60,88.6,88.3,87.9,88.3,True,0.018,17.8,Regular,88.3,True,0.018,17.8,Regular
+bidmc20,90,87.7,71.7,87.9,87.2,False,0.349,407.9,Possibly irregular,71.7,False,0.349,407.9,Possibly irregular
+bidmc20,120,88.2,87.7,88.3,87.7,True,0.022,19.2,Regular,87.7,True,0.021,18.9,Regular
+bidmc20,150,87.3,87.6,87.4,87.6,True,0.021,21.7,Regular,87.6,True,0.02,19.7,Regular
+bidmc20,180,87.9,87.9,88.3,87.9,True,0.02,20.8,Regular,87.9,True,0.02,21.2,Regular
+bidmc20,210,87.5,87.4,87.4,87.4,True,0.018,18.6,Regular,87.4,True,0.017,18.1,Regular
+bidmc20,240,87.8,88.2,88.3,88.2,True,0.017,15.7,Regular,88.2,True,0.017,15.7,Regular
+bidmc20,270,87.8,85.6,87.9,88.0,True,0.148,147.0,Regular,85.6,True,0.148,147.0,Regular
+bidmc20,300,87.9,87.6,87.9,87.6,True,0.017,13.3,Regular,87.6,True,0.017,13.2,Regular
+bidmc20,330,87.4,87.6,87.0,87.6,True,0.036,38.7,Regular,87.6,True,0.036,38.9,Regular
+bidmc20,360,88.3,87.7,88.3,87.7,True,0.021,19.6,Regular,87.7,True,0.021,19.6,Regular
+bidmc20,390,87.6,88.3,88.3,88.3,True,0.02,22.8,Regular,88.3,True,0.02,22.9,Regular
+bidmc20,420,88.6,88.6,89.3,88.6,True,0.023,18.6,Regular,88.6,True,0.023,18.6,Regular
+bidmc20,450,88.1,87.9,87.4,87.9,True,0.013,12.3,Regular,87.9,True,0.013,12.3,Regular
+bidmc21,0,117.0,116.7,116.3,116.7,True,0.011,7.8,Regular,116.7,True,0.011,8.3,Regular
+bidmc21,30,122.4,122.9,122.7,122.9,True,0.012,7.4,Regular,122.9,True,0.012,8.0,Regular
+bidmc21,60,123.6,123.9,123.6,124.0,True,0.011,7.8,Regular,123.9,True,0.011,7.8,Regular
+bidmc21,90,123.6,123.5,123.1,123.5,True,0.014,8.6,Regular,123.5,True,0.014,8.0,Regular
+bidmc21,120,123.6,120.4,123.6,123.1,True,0.14,69.2,Regular,120.5,True,0.138,68.3,Regular
+bidmc21,150,123.7,121.7,124.1,123.9,True,0.134,95.9,Regular,121.7,True,0.135,96.3,Regular
+bidmc21,180,122.4,122.4,122.2,122.4,True,0.014,10.3,Regular,122.4,True,0.014,10.3,Regular
+bidmc21,210,122.1,109.9,121.8,115.3,True,0.355,158.3,Possibly irregular,107.9,False,0.364,172.3,Possibly irregular
+bidmc21,240,124.2,123.9,125.0,123.9,True,0.023,16.0,Regular,123.9,True,0.023,16.4,Regular
+bidmc21,270,125.2,115.7,125.9,123.3,True,0.261,178.2,Possibly irregular,115.7,True,0.26,178.6,Possibly irregular
+bidmc21,300,125.9,123.7,126.3,126.0,True,0.13,92.2,Regular,123.7,True,0.13,91.4,Regular
+bidmc21,330,126.0,126.0,125.9,126.0,True,0.025,19.9,Regular,126.0,True,0.025,20.1,Regular
+bidmc21,360,124.3,124.2,124.1,124.2,True,0.025,21.0,Regular,124.2,True,0.025,21.1,Regular
+bidmc21,390,124.9,125.2,125.0,125.2,True,0.024,19.9,Regular,125.2,True,0.023,19.1,Regular
+bidmc21,420,127.0,122.7,127.3,124.9,True,0.178,126.4,Slightly variable,122.7,True,0.178,126.4,Slightly variable
+bidmc21,450,128.4,128.2,128.6,128.2,True,0.043,37.3,Regular,128.2,True,0.046,39.3,Regular
+bidmc22,0,80.8,80.5,79.7,80.5,True,0.018,15.0,Regular,80.5,True,0.018,15.0,Regular
+bidmc22,30,84.8,82.4,88.3,86.2,True,0.197,173.0,Slightly variable,82.3,True,0.198,173.6,Slightly variable
+bidmc22,60,85.7,85.0,84.2,85.0,True,0.023,13.6,Regular,85.0,True,0.023,13.5,Regular
+bidmc22,90,82.3,82.1,81.9,82.1,True,0.016,13.9,Regular,82.1,True,0.016,13.7,Regular
+bidmc22,120,80.1,79.4,80.6,79.4,True,0.023,13.4,Regular,79.4,True,0.023,13.4,Regular
+bidmc22,150,78.4,79.1,79.7,79.1,True,0.02,11.9,Regular,79.1,True,0.02,11.0,Regular
+bidmc22,180,79.5,80.2,80.1,80.3,True,0.024,13.7,Regular,80.2,True,0.024,13.6,Regular
+bidmc22,210,82.4,81.8,83.3,81.8,True,0.027,12.3,Regular,81.8,True,0.027,11.8,Regular
+bidmc22,240,81.6,81.9,81.9,81.8,True,0.023,14.6,Regular,81.9,True,0.023,14.8,Regular
+bidmc22,270,79.9,80.4,80.1,80.4,True,0.026,13.9,Regular,80.4,True,0.026,13.7,Regular
+bidmc22,300,82.9,82.0,81.5,82.0,True,0.02,12.4,Regular,82.0,True,0.02,11.9,Regular
+bidmc22,330,81.2,81.8,80.6,81.9,True,0.025,11.7,Regular,81.8,True,0.025,11.7,Regular
+bidmc22,360,81.6,80.8,81.5,80.8,True,0.021,16.4,Regular,80.8,True,0.021,16.7,Regular
+bidmc22,390,80.4,79.9,80.6,79.9,True,0.02,11.2,Regular,79.9,True,0.02,11.2,Regular
+bidmc22,420,84.0,81.9,79.7,81.9,True,0.078,60.7,Regular,81.9,True,0.078,60.7,Regular
+bidmc22,450,80.7,80.4,79.7,80.5,True,0.021,10.8,Regular,80.4,True,0.021,11.1,Regular
+bidmc23,0,63.6,64.1,63.6,71.3,True,0.027,21.3,Regular,64.1,True,0.027,21.0,Regular
+bidmc23,30,65.1,63.7,62.7,63.6,True,0.068,100.6,Regular,63.7,True,0.068,100.6,Regular
+bidmc23,60,67.1,62.0,62.3,98.6,True,0.014,24.8,Regular,61.9,True,0.014,24.7,Regular
+bidmc23,90,68.5,62.7,63.2,93.2,True,0.101,150.6,Regular,62.7,True,0.099,146.8,Regular
+bidmc23,120,61.3,61.4,61.3,61.4,True,0.014,18.5,Regular,61.3,True,0.013,16.3,Regular
+bidmc23,150,62.0,61.7,61.8,85.4,True,0.013,17.2,Regular,61.7,True,0.013,17.8,Regular
+bidmc23,180,63.0,61.7,61.8,61.7,True,0.011,13.7,Regular,61.7,True,0.011,13.7,Regular
+bidmc23,210,62.7,60.9,61.8,112.4,True,0.018,19.7,Regular,61.1,True,0.026,38.5,Regular
+bidmc23,240,65.6,61.9,63.2,93.5,True,0.094,100.0,Regular,61.9,True,0.092,98.4,Regular
+bidmc23,270,62.8,62.9,62.3,62.9,True,0.014,10.3,Regular,62.9,True,0.014,10.5,Regular
+bidmc23,300,63.3,63.2,63.2,63.2,True,0.01,12.8,Regular,63.2,True,0.009,11.6,Regular
+bidmc23,330,62.9,62.9,62.7,62.9,True,0.014,16.2,Regular,62.9,True,0.015,17.9,Regular
+bidmc23,360,65.7,63.4,63.6,63.3,True,0.011,13.9,Regular,63.3,True,0.012,15.0,Regular
+bidmc23,390,63.0,63.2,63.2,63.2,True,0.015,14.3,Regular,63.2,True,0.015,13.9,Regular
+bidmc23,420,63.4,63.2,63.2,63.2,True,0.016,15.4,Regular,63.2,True,0.016,14.4,Regular
+bidmc23,450,62.7,62.7,62.3,62.7,True,0.017,19.8,Regular,62.7,True,0.017,18.8,Regular
+bidmc24,0,96.3,96.7,96.1,96.7,True,0.133,121.8,Regular,96.7,True,0.133,121.8,Regular
+bidmc24,30,97.1,95.9,98.9,95.9,True,0.12,105.6,Regular,95.9,True,0.12,105.9,Regular
+bidmc24,60,96.7,88.5,96.1,93.0,True,0.2,194.2,Slightly variable,88.5,True,0.2,194.0,Slightly variable
+bidmc24,90,98.0,93.7,99.3,93.9,True,0.208,180.2,Slightly variable,93.7,True,0.208,180.2,Slightly variable
+bidmc24,120,99.3,86.4,101.6,91.9,False,0.241,193.4,Slightly variable,86.4,False,0.241,193.4,Slightly variable
+bidmc24,150,99.4,96.2,101.6,96.2,True,0.203,180.8,Slightly variable,96.2,True,0.204,182.3,Slightly variable
+bidmc24,180,96.6,96.9,83.3,97.1,False,0.13,94.2,Regular,96.9,False,0.13,93.3,Regular
+bidmc24,210,95.6,91.4,103.0,91.4,False,0.177,156.5,Slightly variable,91.4,False,0.178,157.4,Slightly variable
+bidmc24,240,95.7,94.9,92.9,97.1,True,0.189,148.2,Slightly variable,94.9,True,0.188,147.3,Slightly variable
+bidmc24,270,96.6,92.9,100.3,92.8,True,0.213,177.9,Slightly variable,92.9,True,0.213,177.9,Slightly variable
+bidmc24,300,97.3,92.8,101.2,97.3,True,0.191,150.5,Slightly variable,92.8,True,0.191,150.5,Slightly variable
+bidmc24,330,94.3,93.0,94.3,93.0,True,0.192,168.3,Slightly variable,93.0,True,0.193,169.0,Slightly variable
+bidmc24,360,98.5,94.3,101.2,96.6,True,0.183,136.6,Slightly variable,94.3,True,0.183,136.6,Slightly variable
+bidmc24,390,95.1,90.0,85.6,94.5,True,0.22,200.7,Slightly variable,90.0,True,0.22,199.8,Slightly variable
+bidmc24,420,94.0,87.5,92.5,92.0,True,0.18,136.6,Slightly variable,87.5,True,0.18,136.6,Slightly variable
+bidmc24,450,93.8,89.2,82.4,89.2,True,0.195,158.2,Slightly variable,89.2,True,0.195,158.2,Slightly variable
+bidmc25,0,126.1,121.6,125.9,117.0,True,0.183,130.7,Slightly variable,121.6,True,0.182,130.0,Slightly variable
+bidmc25,30,126.1,123.7,125.9,116.8,True,0.142,102.5,Regular,123.6,True,0.143,102.7,Regular
+bidmc25,60,125.3,125.3,125.0,123.1,True,0.057,44.2,Regular,125.3,True,0.057,44.6,Regular
+bidmc25,90,125.0,120.9,125.4,120.9,True,0.171,121.2,Slightly variable,120.9,True,0.171,121.2,Slightly variable
+bidmc25,120,125.4,122.9,125.4,118.3,True,0.14,99.6,Regular,122.9,True,0.14,99.6,Regular
+bidmc25,150,124.8,124.5,124.5,120.1,True,0.074,58.3,Regular,124.5,True,0.074,58.2,Regular
+bidmc25,180,124.7,119.9,124.5,115.4,True,0.195,137.0,Slightly variable,119.9,True,0.197,138.1,Slightly variable
+bidmc25,210,126.6,119.9,124.5,117.6,True,0.184,131.0,Slightly variable,119.9,True,0.184,131.0,Slightly variable
+bidmc25,240,124.1,121.7,124.1,121.7,True,0.125,83.5,Regular,121.7,True,0.125,83.4,Regular
+bidmc25,270,124.1,121.6,124.1,119.3,True,0.135,96.2,Regular,121.6,True,0.135,96.2,Regular
+bidmc25,300,124.1,122.0,124.1,119.7,True,0.132,88.7,Regular,122.0,True,0.132,88.7,Regular
+bidmc25,330,124.1,121.8,124.1,119.6,True,0.141,99.4,Regular,121.9,True,0.141,99.2,Regular
+bidmc25,360,124.9,116.8,125.0,124.5,True,0.311,231.6,Possibly irregular,116.8,True,0.309,229.3,Possibly irregular
+bidmc25,390,119.7,119.2,124.1,116.9,True,0.18,128.6,Slightly variable,119.2,True,0.178,127.0,Slightly variable
+bidmc25,420,123.9,121.4,124.1,114.5,True,0.147,107.7,Regular,121.4,True,0.147,107.6,Regular
+bidmc25,450,118.6,123.2,123.1,118.8,True,0.049,38.4,Regular,123.2,True,0.049,38.4,Regular
+bidmc26,0,89.7,78.6,90.2,78.6,False,0.222,240.3,Slightly variable,78.6,False,0.222,240.3,Slightly variable
+bidmc26,30,90.2,78.2,89.7,80.5,False,0.223,240.8,Slightly variable,78.2,False,0.222,239.9,Slightly variable
+bidmc26,60,89.4,81.6,89.3,82.5,True,0.204,209.9,Slightly variable,81.6,True,0.204,209.9,Slightly variable
+bidmc26,90,89.1,82.1,89.3,82.4,True,0.17,148.9,Slightly variable,82.1,True,0.169,147.3,Slightly variable
+bidmc26,120,89.5,79.4,89.7,82.7,False,0.242,270.8,Slightly variable,78.1,False,0.245,273.5,Slightly variable
+bidmc26,150,89.7,81.7,89.7,84.9,True,0.206,228.1,Slightly variable,81.7,True,0.206,228.2,Slightly variable
+bidmc26,180,89.8,81.8,89.7,85.0,True,0.231,249.4,Slightly variable,81.8,True,0.231,249.4,Slightly variable
+bidmc26,210,90.5,82.9,91.1,86.1,True,0.176,159.7,Slightly variable,82.9,True,0.176,160.0,Slightly variable
+bidmc26,240,90.7,82.7,91.1,86.0,True,0.233,249.3,Slightly variable,82.7,True,0.233,249.3,Slightly variable
+bidmc26,270,90.2,80.9,89.7,85.2,True,0.275,223.7,Possibly irregular,79.4,False,0.277,233.9,Possibly irregular
+bidmc26,300,89.4,86.1,90.2,86.1,True,0.152,122.6,Slightly variable,85.3,True,0.143,120.1,Regular
+bidmc26,330,89.9,76.1,90.2,81.1,False,0.27,298.0,Possibly irregular,76.1,False,0.27,298.0,Possibly irregular
+bidmc26,360,90.7,82.0,91.1,85.6,True,0.253,279.0,Possibly irregular,82.0,True,0.253,279.1,Possibly irregular
+bidmc26,390,91.2,71.1,49.0,80.5,False,0.322,,Not enough clean beats,71.1,False,0.322,,Not enough clean beats
+bidmc26,420,90.9,83.6,91.1,84.7,True,0.209,206.3,Slightly variable,83.6,True,0.209,204.7,Slightly variable
+bidmc26,450,91.7,81.5,90.6,83.4,False,0.174,157.3,Slightly variable,81.5,False,0.174,157.7,Slightly variable
+bidmc27,0,89.7,89.7,90.2,89.7,True,0.012,7.9,Regular,89.7,True,0.012,7.2,Regular
+bidmc27,30,88.9,88.9,88.8,88.9,True,0.009,7.0,Regular,88.9,True,0.009,6.7,Regular
+bidmc27,60,88.4,88.5,88.8,88.5,True,0.01,7.6,Regular,88.5,True,0.01,8.0,Regular
+bidmc27,90,88.6,88.3,88.3,88.3,True,0.007,6.7,Regular,88.3,True,0.008,7.4,Regular
+bidmc27,120,88.0,87.9,87.9,87.9,True,0.011,5.6,Regular,87.9,True,0.011,5.6,Regular
+bidmc27,150,88.0,87.7,87.4,87.7,True,0.011,7.0,Regular,87.7,True,0.011,7.0,Regular
+bidmc27,180,88.2,88.5,88.3,88.5,True,0.008,7.3,Regular,88.5,True,0.008,7.3,Regular
+bidmc27,210,88.0,87.6,87.0,87.6,True,0.011,6.4,Regular,87.6,True,0.012,6.6,Regular
+bidmc27,240,88.3,88.1,87.9,88.1,True,0.011,7.9,Regular,88.1,True,0.011,7.9,Regular
+bidmc27,270,87.5,87.1,87.9,87.1,True,0.026,8.7,Regular,87.1,True,0.026,8.7,Regular
+bidmc27,300,87.6,87.9,88.3,87.9,True,0.009,8.3,Regular,87.9,True,0.009,7.2,Regular
+bidmc27,330,87.6,87.9,88.3,87.9,True,0.01,7.3,Regular,87.9,True,0.01,7.1,Regular
+bidmc27,360,88.1,88.2,87.9,88.2,True,0.009,7.2,Regular,88.2,True,0.009,7.2,Regular
+bidmc27,390,87.9,87.2,87.4,87.2,True,0.011,9.9,Regular,87.2,True,0.011,9.9,Regular
+bidmc27,420,87.6,88.1,88.3,88.1,True,0.01,9.5,Regular,88.1,True,0.011,10.4,Regular
+bidmc27,450,89.3,78.3,42.1,83.0,False,0.29,137.7,Possibly irregular,78.3,False,0.29,137.3,Possibly irregular
+bidmc28,0,87.2,87.7,87.4,87.7,True,0.186,215.7,Slightly variable,87.7,True,0.188,217.8,Slightly variable
+bidmc28,30,87.0,88.0,85.1,88.0,True,0.153,157.1,Slightly variable,88.0,True,0.153,157.2,Slightly variable
+bidmc28,60,82.7,79.1,76.0,79.1,True,0.181,211.0,Slightly variable,79.1,True,0.182,210.2,Slightly variable
+bidmc28,90,80.4,72.7,75.5,81.8,True,0.21,225.2,Slightly variable,72.7,True,0.211,225.1,Slightly variable
+bidmc28,120,80.5,83.2,80.6,83.2,True,0.163,132.9,Slightly variable,83.2,True,0.163,132.8,Slightly variable
+bidmc28,150,84.8,80.4,76.4,82.7,True,0.151,149.0,Slightly variable,80.4,True,0.151,149.0,Slightly variable
+bidmc28,180,81.3,78.4,82.4,80.7,True,0.185,203.5,Slightly variable,78.5,True,0.189,207.4,Slightly variable
+bidmc28,210,81.8,79.4,81.9,82.3,True,0.192,202.9,Slightly variable,77.7,True,0.221,218.7,Slightly variable
+bidmc28,240,81.0,79.8,81.5,82.1,True,0.208,214.9,Slightly variable,79.8,True,0.207,214.8,Slightly variable
+bidmc28,270,81.1,76.3,81.5,81.9,True,0.195,221.2,Slightly variable,76.3,True,0.194,219.7,Slightly variable
+bidmc28,300,88.3,87.5,79.7,87.5,True,0.199,128.8,Slightly variable,87.5,True,0.199,128.6,Slightly variable
+bidmc28,330,83.2,83.5,83.8,83.5,True,0.166,162.4,Slightly variable,83.5,True,0.166,162.4,Slightly variable
+bidmc28,360,79.1,75.8,79.2,77.9,True,0.219,247.6,Slightly variable,75.8,True,0.219,248.0,Slightly variable
+bidmc28,390,82.0,79.3,78.3,81.8,True,0.217,237.7,Slightly variable,79.3,True,0.217,237.8,Slightly variable
+bidmc28,420,81.3,80.8,80.6,83.2,True,0.221,215.7,Slightly variable,80.8,True,0.22,214.6,Slightly variable
+bidmc28,450,84.9,84.0,81.5,84.0,True,0.183,188.5,Slightly variable,84.0,True,0.182,186.6,Slightly variable
+bidmc29,0,90.4,89.9,90.2,89.9,True,0.056,62.9,Regular,89.9,True,0.056,62.8,Regular
+bidmc29,30,89.3,90.5,90.6,90.4,True,0.038,41.1,Regular,90.5,True,0.038,40.9,Regular
+bidmc29,60,90.4,84.9,90.2,89.5,True,0.229,233.2,Slightly variable,84.9,True,0.229,233.2,Slightly variable
+bidmc29,90,89.9,88.0,90.2,88.0,True,0.151,138.9,Slightly variable,88.0,True,0.153,140.5,Slightly variable
+bidmc29,120,90.7,88.0,90.6,90.3,True,0.208,232.2,Slightly variable,88.0,True,0.208,231.9,Slightly variable
+bidmc29,150,90.5,88.2,89.7,88.2,True,0.17,160.0,Slightly variable,88.2,True,0.17,160.1,Slightly variable
+bidmc29,180,90.4,90.1,90.2,90.1,True,0.068,77.7,Regular,90.1,True,0.068,77.7,Regular
+bidmc29,210,90.3,90.7,90.6,90.8,True,0.083,94.3,Regular,90.7,True,0.083,94.2,Regular
+bidmc29,240,90.0,90.0,89.7,90.0,True,0.069,76.9,Regular,90.0,True,0.069,76.9,Regular
+bidmc29,270,90.8,90.8,91.1,90.8,True,0.079,88.7,Regular,90.8,True,0.08,89.7,Regular
+bidmc29,300,90.5,88.4,90.6,88.4,True,0.17,166.0,Slightly variable,88.4,True,0.169,164.7,Slightly variable
+bidmc29,330,91.7,91.4,90.6,91.4,True,0.04,41.8,Regular,91.4,True,0.04,42.0,Regular
+bidmc29,360,90.6,80.8,90.6,88.4,False,0.298,240.4,Possibly irregular,80.8,False,0.299,241.1,Possibly irregular
+bidmc29,390,91.3,89.6,92.9,91.9,True,0.196,187.7,Slightly variable,89.6,True,0.196,187.6,Slightly variable
+bidmc29,420,90.5,90.4,90.2,90.4,True,0.057,62.7,Regular,90.4,True,0.057,62.8,Regular
+bidmc29,450,91.2,88.4,91.6,90.8,True,0.155,150.3,Slightly variable,88.4,True,0.155,150.4,Slightly variable
+bidmc30,0,88.6,88.5,89.3,88.5,True,0.02,10.8,Regular,88.5,True,0.02,10.8,Regular
+bidmc30,30,88.8,89.4,88.8,89.4,True,0.017,7.6,Regular,89.4,True,0.017,7.6,Regular
+bidmc30,60,88.9,88.2,88.8,88.2,True,0.014,8.3,Regular,88.2,True,0.014,8.3,Regular
+bidmc30,90,89.8,89.4,89.7,89.4,True,0.028,29.3,Regular,89.4,True,0.028,29.3,Regular
+bidmc30,120,87.6,87.5,87.4,87.5,True,0.007,6.7,Regular,87.5,True,0.007,7.2,Regular
+bidmc30,150,88.7,84.3,89.7,86.5,True,0.183,172.3,Slightly variable,84.3,True,0.183,172.1,Slightly variable
+bidmc30,180,87.1,86.5,86.5,86.6,True,0.027,11.2,Regular,86.5,True,0.027,11.8,Regular
+bidmc30,210,88.4,85.8,88.3,85.8,True,0.16,157.6,Slightly variable,85.8,True,0.158,154.8,Slightly variable
+bidmc30,240,88.5,88.5,88.8,88.5,True,0.016,8.7,Regular,88.5,True,0.016,9.4,Regular
+bidmc30,270,88.6,86.5,88.8,86.5,True,0.151,152.1,Slightly variable,86.5,True,0.151,152.0,Slightly variable
+bidmc30,300,88.6,88.4,87.9,88.4,True,0.019,10.5,Regular,88.4,True,0.019,10.5,Regular
+bidmc30,330,88.2,87.7,87.9,87.7,True,0.016,10.6,Regular,87.7,True,0.016,10.9,Regular
+bidmc30,360,88.2,85.4,87.9,85.4,True,0.161,157.2,Slightly variable,85.4,True,0.161,156.2,Slightly variable
+bidmc30,390,87.8,87.8,88.3,87.8,True,0.012,7.7,Regular,87.8,True,0.012,7.7,Regular
+bidmc30,420,88.3,86.0,88.3,86.0,True,0.157,157.5,Slightly variable,86.0,True,0.157,157.5,Slightly variable
+bidmc30,450,89.3,89.0,89.7,89.0,True,0.017,10.1,Regular,88.9,True,0.017,9.8,Regular
+bidmc31,0,87.3,78.0,87.0,89.4,False,0.286,300.2,Possibly irregular,78.0,False,0.287,302.1,Possibly irregular
+bidmc31,30,84.7,84.6,84.7,84.6,True,0.011,10.7,Regular,84.6,True,0.011,9.8,Regular
+bidmc31,60,84.7,84.9,85.6,84.9,True,0.013,11.9,Regular,84.9,True,0.013,11.9,Regular
+bidmc31,90,84.4,84.4,84.2,84.4,True,0.014,12.2,Regular,84.4,True,0.014,12.2,Regular
+bidmc31,120,84.4,84.4,84.2,84.4,True,0.011,9.2,Regular,84.4,True,0.01,8.9,Regular
+bidmc31,150,84.3,84.2,83.8,84.2,True,0.031,13.7,Regular,84.2,True,0.031,14.5,Regular
+bidmc31,180,83.4,83.4,83.3,83.4,True,0.01,10.5,Regular,83.4,True,0.01,10.1,Regular
+bidmc31,210,83.0,83.0,83.3,83.0,True,0.012,11.6,Regular,83.0,True,0.012,11.6,Regular
+bidmc31,240,82.9,82.8,82.9,82.8,True,0.012,11.0,Regular,82.8,True,0.012,10.4,Regular
+bidmc31,270,83.5,83.4,83.3,83.4,True,0.011,11.8,Regular,83.4,True,0.011,12.5,Regular
+bidmc31,300,83.3,83.3,83.3,83.3,True,0.014,14.3,Regular,83.3,True,0.015,15.6,Regular
+bidmc31,330,82.9,82.9,82.9,82.9,True,0.014,12.2,Regular,82.9,True,0.014,12.2,Regular
+bidmc31,360,82.4,82.3,81.9,82.3,True,0.014,11.2,Regular,82.3,True,0.014,12.6,Regular
+bidmc31,390,81.4,81.4,81.0,81.4,True,0.015,15.2,Regular,81.4,True,0.015,15.3,Regular
+bidmc31,420,82.0,81.9,81.9,81.9,True,0.016,14.0,Regular,81.9,True,0.015,13.0,Regular
+bidmc31,450,82.7,82.7,82.9,82.7,True,0.011,10.8,Regular,82.7,True,0.011,11.0,Regular
+bidmc32,0,81.2,81.3,81.5,81.3,True,0.075,98.1,Regular,81.3,True,0.078,101.2,Regular
+bidmc32,30,81.0,81.3,81.5,81.3,True,0.025,32.7,Regular,81.3,True,0.027,34.2,Regular
+bidmc32,60,81.1,81.1,81.0,81.1,True,0.048,62.8,Regular,81.1,True,0.049,63.6,Regular
+bidmc32,90,81.1,81.5,81.0,81.5,True,0.038,46.7,Regular,81.5,True,0.037,46.1,Regular
+bidmc32,120,81.1,81.2,81.5,81.2,True,0.038,46.8,Regular,81.2,True,0.036,44.2,Regular
+bidmc32,150,81.2,81.4,81.5,81.4,True,0.037,48.7,Regular,81.4,True,0.038,49.3,Regular
+bidmc32,180,81.0,81.2,81.0,81.2,True,0.058,76.6,Regular,81.2,True,0.056,74.3,Regular
+bidmc32,210,81.2,81.2,81.5,81.2,True,0.027,35.7,Regular,81.2,True,0.028,37.3,Regular
+bidmc32,240,81.0,80.9,81.0,81.0,True,0.031,40.8,Regular,80.9,True,0.033,43.1,Regular
+bidmc32,270,81.0,81.1,81.0,81.1,True,0.065,82.5,Regular,81.1,True,0.064,82.2,Regular
+bidmc32,300,81.1,81.1,81.0,81.1,True,0.035,44.3,Regular,81.1,True,0.035,44.7,Regular
+bidmc32,330,81.0,80.8,80.6,80.8,True,0.026,33.2,Regular,80.8,True,0.026,32.6,Regular
+bidmc32,360,81.1,78.5,81.0,80.5,True,0.14,81.0,Regular,78.5,True,0.141,80.1,Regular
+bidmc32,390,81.0,80.9,80.6,80.9,True,0.033,42.9,Regular,80.9,True,0.034,43.9,Regular
+bidmc32,420,81.0,81.4,81.0,81.4,True,0.036,45.2,Regular,81.4,True,0.037,46.5,Regular
+bidmc32,450,80.9,80.6,80.6,80.6,True,0.039,49.6,Regular,80.6,True,0.039,50.1,Regular
+bidmc33,0,79.9,77.9,83.8,80.2,True,0.261,296.2,Possibly irregular,77.9,True,0.259,294.9,Possibly irregular
+bidmc33,30,83.0,83.8,84.7,83.8,True,0.167,195.6,Slightly variable,83.8,True,0.167,196.3,Slightly variable
+bidmc33,60,83.7,83.1,84.7,83.1,True,0.171,205.2,Slightly variable,83.1,True,0.172,205.7,Slightly variable
+bidmc33,90,79.4,78.8,81.0,78.8,True,0.216,272.4,Slightly variable,78.8,True,0.216,273.1,Slightly variable
+bidmc33,120,81.7,80.7,76.9,80.7,True,0.237,285.3,Slightly variable,80.8,True,0.237,284.5,Slightly variable
+bidmc33,150,80.2,81.6,84.7,81.6,True,0.24,286.0,Slightly variable,81.6,True,0.24,285.8,Slightly variable
+bidmc33,180,84.4,83.9,83.8,83.9,True,0.186,229.9,Slightly variable,83.9,True,0.186,229.9,Slightly variable
+bidmc33,210,83.9,85.4,83.8,85.4,True,0.17,196.5,Slightly variable,85.4,True,0.171,197.4,Slightly variable
+bidmc33,240,81.9,80.0,54.9,80.0,False,0.235,271.1,Slightly variable,80.0,False,0.234,270.9,Slightly variable
+bidmc33,270,78.9,79.4,81.5,79.4,True,0.229,277.6,Slightly variable,79.4,True,0.229,277.6,Slightly variable
+bidmc33,300,84.0,82.1,85.1,84.4,True,0.216,208.7,Slightly variable,82.1,True,0.216,208.5,Slightly variable
+bidmc33,330,81.5,82.0,79.7,82.0,True,0.222,259.1,Slightly variable,82.0,True,0.221,257.8,Slightly variable
+bidmc33,360,84.1,83.8,80.1,83.8,True,0.21,248.5,Slightly variable,83.8,True,0.21,248.5,Slightly variable
+bidmc33,390,83.2,85.5,87.9,85.5,True,0.173,203.3,Slightly variable,85.5,True,0.174,204.7,Slightly variable
+bidmc33,420,83.3,82.4,82.4,82.4,True,0.214,238.3,Slightly variable,82.4,True,0.214,238.3,Slightly variable
+bidmc33,450,83.7,84.0,54.9,84.6,False,0.211,230.9,Slightly variable,84.0,False,0.211,229.8,Slightly variable
+bidmc34,0,84.4,85.2,87.9,85.1,True,0.047,20.5,Regular,85.2,True,0.047,20.4,Regular
+bidmc34,30,82.1,81.7,81.5,81.7,True,0.023,17.6,Regular,81.7,True,0.023,16.7,Regular
+bidmc34,60,79.1,79.3,79.2,79.3,True,0.025,16.2,Regular,79.3,True,0.025,16.4,Regular
+bidmc34,90,90.6,85.7,88.3,85.7,True,0.06,32.0,Regular,85.7,True,0.06,31.7,Regular
+bidmc34,120,81.3,80.6,80.1,80.6,True,0.052,61.4,Regular,80.6,True,0.052,61.5,Regular
+bidmc34,150,79.4,79.6,80.1,79.6,True,0.021,15.2,Regular,79.6,True,0.021,15.2,Regular
+bidmc34,180,78.7,78.6,78.7,78.6,True,0.02,16.1,Regular,78.6,True,0.02,16.2,Regular
+bidmc34,210,80.7,81.0,81.0,81.0,True,0.016,15.1,Regular,81.0,True,0.016,14.4,Regular
+bidmc34,240,81.1,81.0,81.0,81.0,True,0.02,14.6,Regular,81.0,True,0.02,13.9,Regular
+bidmc34,270,81.1,80.7,80.6,80.7,True,0.017,13.2,Regular,80.7,True,0.018,14.2,Regular
+bidmc34,300,81.0,80.8,80.6,80.8,True,0.015,15.8,Regular,80.7,True,0.015,14.9,Regular
+bidmc34,330,82.3,83.0,82.4,83.0,True,0.023,13.1,Regular,83.0,True,0.023,13.1,Regular
+bidmc34,360,83.4,82.7,82.4,83.7,True,0.027,20.1,Regular,82.7,True,0.027,19.9,Regular
+bidmc34,390,81.7,77.2,81.9,81.8,True,0.192,148.7,Slightly variable,77.2,True,0.193,148.4,Slightly variable
+bidmc34,420,81.2,81.3,81.5,81.3,True,0.015,13.4,Regular,81.3,True,0.015,13.2,Regular
+bidmc34,450,81.9,82.2,81.5,82.0,True,0.09,117.8,Regular,82.2,True,0.09,118.0,Regular
+bidmc35,0,103.0,103.5,99.8,103.5,True,0.047,30.9,Regular,103.5,True,0.047,31.4,Regular
+bidmc35,30,108.8,97.2,110.8,109.6,False,0.32,239.4,Possibly irregular,97.2,False,0.32,239.4,Possibly irregular
+bidmc35,60,101.9,101.5,100.7,101.5,True,0.029,21.1,Regular,101.5,True,0.03,21.1,Regular
+bidmc35,90,98.8,98.4,98.0,98.4,True,0.03,30.7,Regular,98.4,True,0.03,30.7,Regular
+bidmc35,120,102.0,102.2,102.5,102.2,True,0.026,17.7,Regular,102.2,True,0.026,17.5,Regular
+bidmc35,150,103.7,104.3,102.1,104.3,True,0.05,31.2,Regular,104.3,True,0.05,31.3,Regular
+bidmc35,180,107.0,105.9,108.9,104.9,True,0.075,52.9,Regular,105.9,True,0.08,62.8,Regular
+bidmc35,210,103.1,102.6,101.6,102.6,True,0.042,29.2,Regular,102.7,True,0.044,30.4,Regular
+bidmc35,240,96.7,90.1,96.6,96.9,True,0.251,142.8,Possibly irregular,90.2,True,0.252,143.4,Possibly irregular
+bidmc35,270,99.9,94.4,98.9,99.0,True,0.198,190.0,Slightly variable,94.4,True,0.199,190.9,Slightly variable
+bidmc35,300,104.1,88.5,102.1,94.8,False,0.326,133.0,Possibly irregular,88.5,False,0.326,133.1,Possibly irregular
+bidmc35,330,99.3,99.4,99.8,99.4,True,0.056,54.0,Regular,99.4,True,0.056,53.8,Regular
+bidmc35,360,99.8,97.3,99.8,99.6,True,0.154,107.2,Slightly variable,97.3,True,0.154,107.1,Slightly variable
+bidmc35,390,101.6,102.5,102.1,102.6,True,0.079,70.6,Regular,102.5,True,0.08,71.7,Regular
+bidmc35,420,100.2,99.6,98.4,99.6,True,0.049,38.8,Regular,99.6,True,0.048,38.2,Regular
+bidmc35,450,99.4,99.2,98.9,99.2,True,0.057,56.1,Regular,99.2,True,0.057,56.1,Regular
+bidmc36,0,74.4,74.1,75.1,74.1,True,0.029,27.9,Regular,74.1,True,0.029,27.1,Regular
+bidmc36,30,73.5,73.2,72.8,73.2,True,0.025,32.0,Regular,73.2,True,0.026,33.6,Regular
+bidmc36,60,72.8,72.6,73.2,72.6,True,0.03,30.1,Regular,72.6,True,0.03,30.1,Regular
+bidmc36,90,74.0,73.4,74.2,74.4,True,0.028,27.5,Regular,73.4,True,0.028,27.3,Regular
+bidmc36,120,72.5,73.3,72.3,73.2,True,0.027,29.4,Regular,73.3,True,0.027,28.2,Regular
+bidmc36,150,73.4,72.7,73.7,72.7,True,0.032,24.0,Regular,72.7,True,0.032,25.1,Regular
+bidmc36,180,71.7,73.0,73.2,73.0,True,0.029,24.0,Regular,73.0,True,0.03,25.3,Regular
+bidmc36,210,72.8,72.7,73.2,72.7,True,0.024,25.3,Regular,72.7,True,0.024,24.9,Regular
+bidmc36,240,73.2,72.6,72.8,72.6,True,0.033,27.1,Regular,72.6,True,0.033,27.1,Regular
+bidmc36,270,72.0,72.5,73.2,72.5,True,0.033,31.7,Regular,72.5,True,0.033,32.7,Regular
+bidmc36,300,72.4,72.8,72.3,72.8,True,0.026,29.9,Regular,72.8,True,0.026,29.7,Regular
+bidmc36,330,74.3,74.4,74.2,75.3,True,0.019,19.0,Regular,74.4,True,0.019,18.2,Regular
+bidmc36,360,74.6,74.7,75.1,74.7,True,0.024,19.7,Regular,74.6,True,0.025,19.1,Regular
+bidmc36,390,73.0,71.2,71.9,71.4,True,0.035,32.6,Regular,71.2,True,0.035,32.4,Regular
+bidmc36,420,69.9,70.1,70.5,70.1,True,0.028,26.1,Regular,70.1,True,0.028,26.1,Regular
+bidmc36,450,72.3,73.1,72.3,73.1,True,0.029,27.6,Regular,73.1,True,0.029,27.3,Regular
+bidmc37,0,90.2,90.3,90.2,90.3,True,0.013,13.2,Regular,90.3,True,0.013,13.2,Regular
+bidmc37,30,90.3,89.9,89.3,90.1,True,0.04,45.1,Regular,89.9,True,0.042,47.5,Regular
+bidmc37,60,90.0,90.2,90.2,90.2,True,0.014,15.9,Regular,90.2,True,0.014,15.9,Regular
+bidmc37,90,90.3,90.3,90.6,90.3,True,0.014,14.0,Regular,90.3,True,0.014,13.6,Regular
+bidmc37,120,90.3,90.5,90.6,90.5,True,0.013,11.1,Regular,90.5,True,0.013,11.1,Regular
+bidmc37,150,90.3,89.9,90.2,89.9,True,0.013,12.0,Regular,89.9,True,0.013,12.0,Regular
+bidmc37,180,91.1,91.3,91.6,91.3,True,0.011,12.2,Regular,91.3,True,0.011,12.2,Regular
+bidmc37,210,90.5,90.2,90.2,90.2,True,0.019,21.3,Regular,90.2,True,0.019,21.0,Regular
+bidmc37,240,90.1,90.3,90.2,90.3,True,0.015,16.6,Regular,90.4,True,0.015,16.8,Regular
+bidmc37,270,90.0,90.1,90.2,90.1,True,0.013,12.8,Regular,90.1,True,0.013,13.8,Regular
+bidmc37,300,89.7,89.8,90.2,89.8,True,0.015,9.1,Regular,89.8,True,0.015,8.4,Regular
+bidmc37,330,89.1,88.9,88.8,88.9,True,0.009,9.8,Regular,88.9,True,0.009,9.8,Regular
+bidmc37,360,89.5,89.5,89.3,89.5,True,0.053,63.1,Regular,89.5,True,0.053,62.9,Regular
+bidmc37,390,90.1,90.1,90.2,90.0,True,0.017,15.7,Regular,90.1,True,0.016,15.8,Regular
+bidmc37,420,90.0,88.0,90.6,90.3,True,0.15,151.0,Regular,88.0,True,0.15,150.9,Regular
+bidmc37,450,89.9,89.5,89.7,89.5,True,0.016,15.3,Regular,89.5,True,0.015,14.8,Regular
+bidmc38,0,81.0,76.6,81.9,83.5,True,0.216,250.9,Slightly variable,76.6,True,0.216,250.4,Slightly variable
+bidmc38,30,80.1,75.5,79.7,80.1,True,0.199,233.3,Slightly variable,75.5,True,0.199,233.2,Slightly variable
+bidmc38,60,80.0,77.4,80.1,80.8,True,0.144,164.2,Regular,77.4,True,0.144,164.1,Regular
+bidmc38,90,80.7,73.7,81.0,80.6,True,0.234,286.2,Slightly variable,73.7,True,0.234,286.9,Slightly variable
+bidmc38,120,80.0,80.2,80.1,80.2,True,0.067,81.7,Regular,80.2,True,0.067,81.7,Regular
+bidmc38,150,80.3,73.6,80.1,83.5,True,0.214,258.7,Slightly variable,73.6,True,0.214,258.6,Slightly variable
+bidmc38,180,86.3,87.9,88.8,89.8,True,0.125,140.6,Regular,87.9,True,0.125,140.3,Regular
+bidmc38,210,88.6,88.3,88.3,88.4,True,0.044,49.4,Regular,88.3,True,0.044,49.3,Regular
+bidmc38,240,86.6,83.7,86.1,83.7,True,0.168,180.6,Slightly variable,83.7,True,0.168,179.8,Slightly variable
+bidmc38,270,85.0,81.1,83.8,83.4,True,0.161,178.1,Slightly variable,81.1,True,0.163,180.6,Slightly variable
+bidmc38,300,84.4,77.5,84.7,82.0,True,0.251,271.4,Possibly irregular,77.5,True,0.251,271.4,Possibly irregular
+bidmc38,330,84.7,83.0,84.7,83.0,True,0.165,181.7,Slightly variable,83.0,True,0.165,181.4,Slightly variable
+bidmc38,360,83.8,81.3,83.8,83.6,True,0.161,144.9,Slightly variable,81.3,True,0.161,144.9,Slightly variable
+bidmc38,390,85.7,81.8,86.5,87.0,True,0.185,201.0,Slightly variable,81.8,True,0.185,201.0,Slightly variable
+bidmc38,420,87.3,84.8,87.0,84.8,True,0.144,150.5,Regular,84.8,True,0.145,152.4,Regular
+bidmc38,450,86.6,82.0,86.5,84.3,True,0.234,261.5,Slightly variable,82.0,True,0.234,262.0,Slightly variable
+bidmc39,0,80.6,45.2,42.1,80.9,True,0.191,295.2,Slightly variable,45.2,True,0.191,295.2,Slightly variable
+bidmc39,30,74.5,72.4,73.2,72.8,True,0.088,132.6,Regular,72.4,True,0.088,132.6,Regular
+bidmc39,60,73.5,74.0,74.2,74.0,True,0.015,14.6,Regular,73.9,True,0.015,15.3,Regular
+bidmc39,90,74.5,74.6,75.1,74.6,True,0.017,16.3,Regular,74.7,True,0.016,16.0,Regular
+bidmc39,120,74.0,73.9,73.7,73.9,True,0.013,15.3,Regular,73.9,True,0.014,17.0,Regular
+bidmc39,150,75.2,72.6,75.5,74.9,True,0.128,149.7,Regular,72.6,True,0.128,149.7,Regular
+bidmc39,180,73.5,73.5,73.7,73.5,True,0.015,18.1,Regular,73.5,True,0.014,16.1,Regular
+bidmc39,210,74.8,75.1,75.1,75.1,True,0.016,20.6,Regular,75.1,True,0.016,20.6,Regular
+bidmc39,240,75.8,73.6,74.6,75.9,True,0.18,224.5,Slightly variable,73.6,True,0.18,223.7,Slightly variable
+bidmc39,270,76.2,69.1,76.4,76.0,True,0.255,318.5,Possibly irregular,69.1,True,0.254,316.8,Possibly irregular
+bidmc39,300,75.6,72.5,76.0,77.0,True,0.19,256.2,Slightly variable,72.5,True,0.19,255.3,Slightly variable
+bidmc39,330,75.7,70.6,74.6,75.2,True,0.192,241.0,Slightly variable,70.6,True,0.192,241.1,Slightly variable
+bidmc39,360,76.7,77.2,77.4,77.2,True,0.059,82.9,Regular,77.2,True,0.059,83.2,Regular
+bidmc39,390,76.9,73.7,75.5,76.0,True,0.161,195.0,Slightly variable,73.7,True,0.16,192.4,Slightly variable
+bidmc39,420,76.6,71.2,76.4,78.1,True,0.204,260.8,Slightly variable,71.2,True,0.204,261.3,Slightly variable
+bidmc39,450,74.2,71.6,73.7,74.0,True,0.137,163.0,Regular,71.6,True,0.137,162.9,Regular
+bidmc40,0,109.3,109.2,109.4,107.1,True,0.1,95.4,Regular,109.2,True,0.1,95.2,Regular
+bidmc40,30,110.5,105.1,109.9,101.1,True,0.189,134.4,Slightly variable,105.1,True,0.19,135.5,Slightly variable
+bidmc40,60,110.2,110.3,110.3,110.3,True,0.018,16.7,Regular,110.3,True,0.018,17.1,Regular
+bidmc40,90,111.1,,43.9,88.3,False,,,Not enough clean beats,,False,,,Not enough clean beats
+bidmc40,120,109.7,109.1,109.9,107.9,True,0.064,40.5,Regular,109.1,True,0.063,39.4,Regular
+bidmc40,150,110.7,110.7,110.3,103.8,True,0.098,96.3,Regular,110.7,True,0.099,96.9,Regular
+bidmc40,180,110.9,89.1,110.8,97.2,False,0.359,340.3,Possibly irregular,89.2,False,0.368,340.3,Possibly irregular
+bidmc40,210,111.3,101.4,111.2,102.0,True,0.281,201.9,Possibly irregular,101.5,True,0.28,200.8,Possibly irregular
+bidmc40,240,109.6,99.7,109.4,107.0,True,0.281,228.7,Possibly irregular,99.7,True,0.281,228.7,Possibly irregular
+bidmc40,270,109.3,106.1,108.9,107.0,True,0.147,43.9,Regular,106.1,True,0.145,44.1,Regular
+bidmc40,300,110.0,107.6,109.9,109.9,True,0.149,121.0,Regular,107.6,True,0.149,121.0,Regular
+bidmc40,330,110.4,56.3,52.2,96.4,False,0.173,,Not enough clean beats,56.4,False,0.172,,Not enough clean beats
+bidmc40,360,111.0,107.5,111.7,111.2,True,0.169,101.5,Slightly variable,107.5,True,0.17,102.2,Slightly variable
+bidmc40,390,111.3,98.5,92.9,90.7,True,0.274,162.4,Possibly irregular,95.9,True,0.299,162.9,Possibly irregular
+bidmc40,420,110.8,101.0,109.9,101.5,True,0.274,182.5,Possibly irregular,101.0,True,0.271,180.3,Possibly irregular
+bidmc40,450,110.7,97.5,111.2,103.8,False,0.304,195.6,Possibly irregular,97.4,False,0.302,195.7,Possibly irregular
+bidmc41,0,67.1,77.2,76.4,79.4,True,0.137,171.7,Regular,77.2,True,0.137,171.8,Regular
+bidmc41,30,59.1,51.0,50.4,99.9,True,0.07,125.5,Regular,51.0,True,0.07,125.5,Regular
+bidmc41,60,78.1,50.2,50.4,100.4,True,0.005,7.8,Regular,50.2,True,0.005,7.8,Regular
+bidmc41,90,80.4,49.5,49.4,99.6,True,0.007,10.0,Regular,49.5,True,0.007,10.0,Regular
+bidmc41,120,76.8,70.8,47.6,94.6,False,0.291,296.4,Possibly irregular,70.8,False,0.29,295.5,Possibly irregular
+bidmc41,150,82.3,84.3,84.7,94.4,True,0.316,284.8,Possibly irregular,84.3,True,0.316,284.6,Possibly irregular
+bidmc41,180,86.0,69.5,77.8,76.4,False,0.244,267.7,Slightly variable,69.5,False,0.244,267.7,Slightly variable
+bidmc41,210,79.9,75.0,83.8,85.3,False,0.173,157.0,Slightly variable,75.0,False,0.173,157.0,Slightly variable
+bidmc41,240,81.1,80.1,80.1,80.1,True,0.011,12.6,Regular,80.1,True,0.011,13.0,Regular
+bidmc41,270,81.8,80.2,77.4,80.2,True,0.062,60.6,Regular,80.2,True,0.062,60.6,Regular
+bidmc41,300,85.0,79.3,79.2,81.8,True,0.114,117.6,Regular,79.3,True,0.114,117.6,Regular
+bidmc41,330,79.6,72.7,70.0,89.3,True,0.266,290.7,Possibly irregular,72.7,True,0.266,290.6,Possibly irregular
+bidmc41,360,87.3,64.7,74.6,69.7,False,0.278,405.8,Possibly irregular,64.7,False,0.278,405.8,Possibly irregular
+bidmc41,390,81.1,84.2,87.4,84.2,True,0.235,193.7,Slightly variable,84.2,True,0.235,193.2,Slightly variable
+bidmc41,420,80.4,78.9,79.7,83.5,True,0.161,161.8,Slightly variable,78.9,True,0.161,162.2,Slightly variable
+bidmc41,450,79.1,80.3,77.4,80.3,True,0.063,57.8,Regular,80.3,True,0.063,57.8,Regular
+bidmc42,0,84.0,84.1,84.2,84.1,True,0.008,6.8,Regular,84.1,True,0.009,8.0,Regular
+bidmc42,30,83.6,83.6,83.8,83.6,True,0.01,9.3,Regular,83.6,True,0.01,9.3,Regular
+bidmc42,60,84.1,84.3,84.2,84.3,True,0.009,8.4,Regular,84.3,True,0.009,8.4,Regular
+bidmc42,90,84.2,84.1,84.2,84.1,True,0.01,8.0,Regular,84.1,True,0.01,8.0,Regular
+bidmc42,120,83.5,82.9,82.9,82.9,True,0.012,10.1,Regular,82.9,True,0.012,9.9,Regular
+bidmc42,150,83.0,83.3,83.8,83.3,True,0.013,10.6,Regular,83.3,True,0.013,11.0,Regular
+bidmc42,180,84.0,84.2,84.2,84.2,True,0.01,9.4,Regular,84.2,True,0.009,9.0,Regular
+bidmc42,210,84.0,83.6,83.8,83.6,True,0.012,10.2,Regular,83.6,True,0.012,11.6,Regular
+bidmc42,240,83.5,83.5,83.3,83.5,True,0.011,10.2,Regular,83.5,True,0.011,10.2,Regular
+bidmc42,270,83.4,83.0,82.9,83.0,True,0.011,8.7,Regular,83.0,True,0.011,9.3,Regular
+bidmc42,300,83.9,84.0,84.2,84.0,True,0.01,6.8,Regular,84.0,True,0.011,9.3,Regular
+bidmc42,330,83.6,83.5,83.3,83.5,True,0.012,10.1,Regular,83.5,True,0.011,8.9,Regular
+bidmc42,360,83.9,83.9,83.8,83.9,True,0.01,8.7,Regular,83.9,True,0.009,8.4,Regular
+bidmc42,390,83.3,83.3,82.9,83.3,True,0.015,10.2,Regular,83.2,True,0.015,9.7,Regular
+bidmc42,420,83.7,83.7,83.3,83.7,True,0.01,8.0,Regular,83.7,True,0.011,9.6,Regular
+bidmc42,450,84.0,84.1,84.2,84.1,True,0.012,10.3,Regular,84.1,True,0.012,10.4,Regular
+bidmc43,0,88.9,89.4,90.2,89.4,True,0.025,16.2,Regular,89.4,True,0.024,15.3,Regular
+bidmc43,30,89.1,89.0,87.9,89.0,True,0.029,18.1,Regular,89.0,True,0.03,18.6,Regular
+bidmc43,60,89.0,84.6,89.7,86.8,True,0.204,210.5,Slightly variable,84.6,True,0.204,210.5,Slightly variable
+bidmc43,90,84.1,85.8,82.4,85.8,True,0.063,38.6,Regular,85.8,True,0.063,38.6,Regular
+bidmc43,120,88.0,85.9,86.5,85.9,True,0.151,149.7,Slightly variable,85.9,True,0.151,149.7,Slightly variable
+bidmc43,150,88.0,85.7,87.0,85.7,True,0.151,153.5,Slightly variable,85.7,True,0.151,153.4,Slightly variable
+bidmc43,180,91.2,89.1,92.0,91.4,True,0.141,133.2,Regular,89.1,True,0.141,132.5,Regular
+bidmc43,210,90.4,90.1,91.1,90.1,True,0.033,21.6,Regular,90.1,True,0.033,21.8,Regular
+bidmc43,240,92.0,92.7,93.8,92.7,True,0.034,24.4,Regular,92.7,True,0.034,24.4,Regular
+bidmc43,270,90.8,87.6,88.8,87.8,True,0.161,154.2,Slightly variable,87.6,True,0.161,154.2,Slightly variable
+bidmc43,300,85.6,85.7,87.0,85.8,True,0.063,39.8,Regular,85.7,True,0.063,37.8,Regular
+bidmc43,330,92.7,93.3,93.4,93.3,True,0.028,13.3,Regular,93.3,True,0.028,13.3,Regular
+bidmc43,360,86.7,85.1,79.7,85.1,True,0.068,28.8,Regular,85.1,True,0.068,29.5,Regular
+bidmc43,390,91.7,92.7,93.4,92.6,True,0.036,20.5,Regular,92.7,True,0.036,20.1,Regular
+bidmc43,420,94.4,93.5,94.3,93.5,True,0.043,17.0,Regular,93.5,True,0.042,16.7,Regular
+bidmc43,450,96.1,95.3,94.8,95.3,True,0.024,16.2,Regular,95.3,True,0.024,16.2,Regular
+bidmc44,0,91.6,89.3,91.6,91.6,True,0.156,155.1,Slightly variable,89.3,True,0.155,152.4,Slightly variable
+bidmc44,30,91.8,91.4,91.6,91.4,True,0.01,8.6,Regular,91.4,True,0.011,9.1,Regular
+bidmc44,60,91.7,91.6,91.6,91.6,True,0.014,15.4,Regular,91.6,True,0.014,15.3,Regular
+bidmc44,90,91.7,83.7,91.6,89.1,True,0.264,196.9,Possibly irregular,83.7,True,0.264,196.9,Possibly irregular
+bidmc44,120,91.0,91.0,91.1,91.0,True,0.012,12.6,Regular,91.0,True,0.013,13.5,Regular
+bidmc44,150,91.0,90.8,90.6,90.8,True,0.015,15.8,Regular,90.8,True,0.015,15.7,Regular
+bidmc44,180,90.9,90.6,90.6,90.6,True,0.016,15.0,Regular,90.6,True,0.015,13.4,Regular
+bidmc44,210,90.0,90.0,90.2,90.0,True,0.013,13.9,Regular,90.0,True,0.013,13.5,Regular
+bidmc44,240,89.9,89.5,89.7,89.5,True,0.009,8.4,Regular,89.5,True,0.009,8.4,Regular
+bidmc44,270,89.0,87.3,45.3,77.5,False,0.133,129.7,Regular,87.3,True,0.133,129.6,Regular
+bidmc44,300,89.0,85.8,89.7,83.1,True,0.182,184.3,Slightly variable,85.8,True,0.182,184.3,Slightly variable
+bidmc44,330,88.6,88.5,88.3,88.5,True,0.071,83.6,Regular,88.5,True,0.071,83.6,Regular
+bidmc44,360,88.0,88.1,87.9,88.1,True,0.012,12.1,Regular,88.1,True,0.012,12.2,Regular
+bidmc44,390,88.0,87.9,87.9,87.9,True,0.011,13.7,Regular,87.9,True,0.012,14.1,Regular
+bidmc44,420,88.0,87.5,87.4,87.5,True,0.023,26.5,Regular,87.5,True,0.023,26.7,Regular
+bidmc44,450,87.2,87.3,87.4,87.3,True,0.014,15.2,Regular,87.4,True,0.013,14.1,Regular
+bidmc45,0,62.8,62.8,74.2,63.2,False,0.211,249.8,Slightly variable,62.8,False,0.211,249.9,Slightly variable
+bidmc45,30,58.7,59.9,66.4,62.3,True,0.169,149.3,Slightly variable,59.9,True,0.169,149.3,Slightly variable
+bidmc45,60,57.1,58.8,48.1,58.8,False,0.159,131.0,Slightly variable,58.8,False,0.159,130.8,Slightly variable
+bidmc45,90,63.1,64.5,53.1,64.5,False,0.156,125.2,Slightly variable,64.5,False,0.156,125.3,Slightly variable
+bidmc45,120,61.2,60.7,50.4,61.7,False,0.169,73.9,Slightly variable,60.7,False,0.17,77.4,Slightly variable
+bidmc45,150,60.8,64.0,55.4,64.0,False,0.134,62.2,Regular,64.0,False,0.134,62.2,Regular
+bidmc45,180,64.4,62.7,58.1,62.7,True,0.089,56.1,Regular,62.7,True,0.089,55.7,Regular
+bidmc45,210,64.4,60.4,55.8,60.4,True,0.13,70.8,Regular,60.4,True,0.129,70.2,Regular
+bidmc45,240,60.1,62.7,67.7,62.7,True,0.136,69.8,Regular,62.7,True,0.136,69.8,Regular
+bidmc45,270,62.2,60.6,54.9,60.6,False,0.144,93.8,Regular,60.6,False,0.145,93.9,Regular
+bidmc45,300,62.5,63.8,68.2,65.6,True,0.148,66.3,Regular,63.8,True,0.148,66.6,Regular
+bidmc45,330,62.1,60.6,66.4,60.4,True,0.159,108.7,Slightly variable,60.6,True,0.159,108.7,Slightly variable
+bidmc45,360,58.9,60.1,75.5,61.0,False,0.193,90.5,Slightly variable,60.1,False,0.193,90.5,Slightly variable
+bidmc45,390,58.2,63.1,57.7,63.1,True,0.119,39.2,Regular,63.1,True,0.119,39.2,Regular
+bidmc45,420,60.7,59.8,64.5,59.8,True,0.116,69.1,Regular,59.8,True,0.116,69.1,Regular
+bidmc45,450,60.6,64.1,51.7,62.3,False,0.159,73.8,Slightly variable,64.1,False,0.159,73.8,Slightly variable
+bidmc46,0,106.5,106.6,106.2,106.6,True,0.015,11.6,Regular,106.6,True,0.014,10.7,Regular
+bidmc46,30,107.3,107.4,107.1,107.4,True,0.013,12.4,Regular,107.5,True,0.014,12.3,Regular
+bidmc46,60,106.5,106.3,106.2,106.3,True,0.019,17.3,Regular,106.3,True,0.02,17.7,Regular
+bidmc46,90,106.5,106.2,104.8,106.2,True,0.017,6.4,Regular,106.2,True,0.017,7.3,Regular
+bidmc46,120,106.6,106.2,105.7,106.2,True,0.012,8.7,Regular,106.2,True,0.012,8.2,Regular
+bidmc46,150,106.6,106.7,107.1,106.7,True,0.009,6.2,Regular,106.7,True,0.009,6.6,Regular
+bidmc46,180,107.4,107.6,107.6,107.7,True,0.018,17.8,Regular,107.6,True,0.018,17.8,Regular
+bidmc46,210,108.3,108.3,108.5,108.3,True,0.02,18.3,Regular,108.3,True,0.021,19.9,Regular
+bidmc46,240,107.0,106.2,106.7,106.2,True,0.048,40.7,Regular,106.2,True,0.048,40.7,Regular
+bidmc46,270,107.6,105.4,106.7,107.7,True,0.136,111.9,Regular,105.4,True,0.136,111.9,Regular
+bidmc46,300,105.8,105.5,104.4,105.6,True,0.018,6.7,Regular,105.5,True,0.018,6.7,Regular
+bidmc46,330,108.2,107.7,108.0,107.7,True,0.017,6.9,Regular,107.7,True,0.016,7.0,Regular
+bidmc46,360,106.0,106.0,106.7,106.0,True,0.012,7.1,Regular,106.0,True,0.012,6.5,Regular
+bidmc46,390,105.9,105.9,106.7,105.9,True,0.013,7.5,Regular,105.9,True,0.013,8.3,Regular
+bidmc46,420,105.3,105.4,105.3,105.4,True,0.011,9.8,Regular,105.4,True,0.011,8.6,Regular
+bidmc46,450,106.0,106.0,105.7,106.0,True,0.011,7.1,Regular,106.0,True,0.011,7.0,Regular
+bidmc47,0,84.2,153.7,83.8,83.6,False,0.268,144.2,Possibly irregular,146.9,False,0.309,184.1,Possibly irregular
+bidmc47,30,83.9,74.2,44.4,84.8,False,0.285,166.2,Possibly irregular,74.2,False,0.285,166.3,Possibly irregular
+bidmc47,60,85.5,168.6,84.2,84.2,False,0.035,18.0,Regular,168.6,False,0.036,18.9,Regular
+bidmc47,90,84.9,85.4,86.1,87.7,True,0.088,107.4,Regular,85.4,True,0.088,107.4,Regular
+bidmc47,120,83.9,148.9,166.2,83.5,False,0.287,158.5,Possibly irregular,148.8,False,0.288,159.0,Possibly irregular
+bidmc47,150,83.4,164.4,166.2,83.4,True,0.12,63.0,Regular,164.4,True,0.12,63.1,Regular
+bidmc47,180,83.7,156.1,167.1,83.7,True,0.237,136.2,Slightly variable,156.1,True,0.237,136.2,Slightly variable
+bidmc47,210,83.3,166.6,166.6,83.3,True,0.019,11.5,Regular,166.6,True,0.019,11.3,Regular
+bidmc47,240,83.0,166.3,166.2,83.1,True,0.027,15.9,Regular,164.0,True,0.115,61.3,Regular
+bidmc47,270,83.6,167.3,168.0,83.7,True,0.033,20.9,Regular,167.3,True,0.033,21.0,Regular
+bidmc47,300,83.6,165.1,167.5,83.7,True,0.122,66.3,Regular,165.1,True,0.123,67.3,Regular
+bidmc47,330,83.6,160.2,167.5,83.5,True,0.195,107.6,Slightly variable,160.2,True,0.195,107.7,Slightly variable
+bidmc47,360,83.3,166.2,166.2,83.1,True,0.045,30.6,Regular,166.2,True,0.045,31.0,Regular
+bidmc47,390,82.8,165.4,165.3,82.7,True,0.042,28.3,Regular,165.4,True,0.042,28.1,Regular
+bidmc47,420,82.6,162.9,165.3,82.6,True,0.123,67.7,Regular,162.8,True,0.123,67.4,Regular
+bidmc47,450,83.3,161.6,167.1,83.0,True,0.169,92.5,Slightly variable,161.6,True,0.169,92.3,Slightly variable
+bidmc48,0,102.8,98.4,98.0,103.0,True,0.183,176.3,Slightly variable,98.4,True,0.183,176.5,Slightly variable
+bidmc48,30,103.7,100.0,98.0,104.6,True,0.18,166.6,Slightly variable,97.8,True,0.207,204.0,Slightly variable
+bidmc48,60,100.2,99.1,97.5,99.1,True,0.052,25.5,Regular,99.1,True,0.051,24.9,Regular
+bidmc48,90,101.0,101.4,99.8,101.4,True,0.037,18.0,Regular,101.4,True,0.038,18.1,Regular
+bidmc48,120,100.7,100.4,99.8,100.4,True,0.034,16.1,Regular,100.4,True,0.034,15.6,Regular
+bidmc48,150,103.0,102.6,103.0,102.6,True,0.02,12.8,Regular,102.6,True,0.02,12.8,Regular
+bidmc48,180,101.3,101.2,101.2,101.2,True,0.02,13.1,Regular,101.2,True,0.021,13.4,Regular
+bidmc48,210,102.2,99.1,102.5,98.7,True,0.085,53.2,Regular,99.1,True,0.085,53.3,Regular
+bidmc48,240,99.9,100.7,100.7,100.7,True,0.022,14.2,Regular,100.7,True,0.022,14.4,Regular
+bidmc48,270,101.9,93.9,97.0,98.4,True,0.241,128.3,Slightly variable,93.9,True,0.241,128.2,Slightly variable
+bidmc48,300,98.2,98.2,98.4,98.2,True,0.02,14.1,Regular,98.2,True,0.02,14.2,Regular
+bidmc48,330,98.3,98.5,98.4,98.5,True,0.018,12.9,Regular,98.5,True,0.018,13.3,Regular
+bidmc48,360,98.6,98.5,98.4,98.5,True,0.018,12.9,Regular,98.5,True,0.018,12.7,Regular
+bidmc48,390,99.4,98.9,99.3,98.9,True,0.021,13.3,Regular,98.9,True,0.021,14.3,Regular
+bidmc48,420,100.9,95.4,99.3,98.9,True,0.198,27.8,Slightly variable,92.6,True,0.232,106.9,Slightly variable
+bidmc48,450,110.9,106.7,109.4,106.5,True,0.096,16.9,Regular,106.7,True,0.096,16.9,Regular
+bidmc49,0,85.3,85.3,85.6,86.2,True,0.019,20.0,Regular,85.2,True,0.019,20.2,Regular
+bidmc49,30,85.6,85.8,85.6,85.8,True,0.016,15.6,Regular,85.8,True,0.015,14.9,Regular
+bidmc49,60,85.5,85.2,85.1,85.2,True,0.023,25.2,Regular,85.2,True,0.022,24.5,Regular
+bidmc49,90,85.0,82.3,85.1,82.3,True,0.115,87.2,Regular,82.3,True,0.115,85.8,Regular
+bidmc49,120,85.8,85.9,86.1,85.9,True,0.085,99.7,Regular,85.9,True,0.085,100.0,Regular
+bidmc49,150,84.1,83.9,83.8,83.9,True,0.03,34.9,Regular,83.9,True,0.028,32.2,Regular
+bidmc49,180,85.4,83.2,85.6,83.2,True,0.133,131.6,Regular,83.2,True,0.133,131.2,Regular
+bidmc49,210,84.6,84.4,84.2,84.4,True,0.022,25.0,Regular,84.4,True,0.022,25.0,Regular
+bidmc49,240,85.4,85.1,85.6,85.1,True,0.015,9.9,Regular,85.1,True,0.015,9.9,Regular
+bidmc49,270,84.1,84.4,84.7,84.4,True,0.069,82.1,Regular,84.4,True,0.069,82.1,Regular
+bidmc49,300,84.7,82.3,85.1,82.2,True,0.153,157.0,Slightly variable,82.3,True,0.154,157.1,Slightly variable
+bidmc49,330,82.5,79.8,82.4,82.4,True,0.179,201.6,Slightly variable,79.8,True,0.179,201.6,Slightly variable
+bidmc49,360,84.2,84.1,83.8,84.1,True,0.018,16.3,Regular,84.1,True,0.017,15.4,Regular
+bidmc49,390,83.5,83.3,82.9,83.3,True,0.014,10.8,Regular,83.3,True,0.014,10.8,Regular
+bidmc49,420,83.7,83.8,84.7,83.8,True,0.017,14.2,Regular,83.8,True,0.017,14.2,Regular
+bidmc49,450,82.9,82.7,82.9,82.7,True,0.012,11.9,Regular,82.7,True,0.012,11.3,Regular
+bidmc50,0,76.7,76.8,76.4,76.9,True,0.013,10.7,Regular,76.8,True,0.013,11.6,Regular
+bidmc50,30,77.7,77.6,77.8,77.6,True,0.018,17.0,Regular,77.6,True,0.019,18.6,Regular
+bidmc50,60,77.0,76.9,77.8,79.3,True,0.022,14.2,Regular,76.9,True,0.023,15.2,Regular
+bidmc50,90,76.5,76.7,76.4,76.7,True,0.02,20.7,Regular,76.7,True,0.02,20.7,Regular
+bidmc50,120,75.7,75.7,75.5,75.7,True,0.014,14.5,Regular,75.6,True,0.014,15.7,Regular
+bidmc50,150,76.2,76.0,76.0,76.0,True,0.016,18.9,Regular,76.0,True,0.016,18.7,Regular
+bidmc50,180,75.4,75.6,75.5,75.6,True,0.013,13.3,Regular,75.5,True,0.014,15.4,Regular
+bidmc50,210,76.9,76.1,76.9,74.9,True,0.112,138.0,Regular,75.0,True,0.125,101.5,Regular
+bidmc50,240,77.1,76.2,76.0,78.7,True,0.053,64.0,Regular,76.2,True,0.053,64.3,Regular
+bidmc50,270,75.4,75.5,76.0,75.5,True,0.015,16.9,Regular,75.5,True,0.015,16.9,Regular
+bidmc50,300,75.6,75.8,75.5,75.8,True,0.029,37.4,Regular,75.8,True,0.029,37.8,Regular
+bidmc50,330,77.3,76.7,76.4,76.7,True,0.088,119.6,Regular,76.7,True,0.088,119.6,Regular
+bidmc50,360,75.4,75.6,75.1,75.7,True,0.017,18.5,Regular,75.6,True,0.016,17.4,Regular
+bidmc50,390,76.4,76.2,75.5,76.2,True,0.012,12.8,Regular,76.2,True,0.012,12.2,Regular
+bidmc50,420,76.4,76.0,75.5,76.0,True,0.017,19.9,Regular,76.0,True,0.018,22.3,Regular
+bidmc50,450,75.6,75.4,75.5,75.4,True,0.011,13.6,Regular,75.4,True,0.011,13.6,Regular
+bidmc51,0,89.4,89.9,89.7,89.9,True,0.038,38.8,Regular,89.9,True,0.038,38.8,Regular
+bidmc51,30,89.9,89.9,90.6,89.8,True,0.012,6.6,Regular,89.9,True,0.012,7.6,Regular
+bidmc51,60,88.2,88.4,87.9,88.4,True,0.01,7.1,Regular,88.4,True,0.01,7.0,Regular
+bidmc51,90,87.4,87.5,87.0,87.5,True,0.011,7.9,Regular,87.5,True,0.011,7.9,Regular
+bidmc51,120,89.7,89.4,88.8,89.5,True,0.014,7.8,Regular,89.4,True,0.014,7.9,Regular
+bidmc51,150,91.6,91.2,91.6,91.2,True,0.012,9.1,Regular,91.2,True,0.011,8.3,Regular
+bidmc51,180,90.4,90.7,90.6,90.7,True,0.014,9.9,Regular,90.7,True,0.014,9.5,Regular
+bidmc51,210,90.6,90.6,91.1,90.6,True,0.008,5.9,Regular,90.6,True,0.008,6.7,Regular
+bidmc51,240,88.2,87.9,87.0,87.9,True,0.015,8.2,Regular,87.9,True,0.015,8.2,Regular
+bidmc51,270,91.2,91.1,91.1,91.1,True,0.01,9.5,Regular,91.1,True,0.01,9.5,Regular
+bidmc51,300,91.8,91.6,91.6,91.6,True,0.006,5.9,Regular,91.6,True,0.006,5.9,Regular
+bidmc51,330,90.4,90.9,91.1,90.9,True,0.013,6.4,Regular,90.9,True,0.013,6.4,Regular
+bidmc51,360,91.8,91.4,92.0,91.4,True,0.013,7.0,Regular,91.4,True,0.013,7.9,Regular
+bidmc51,390,90.7,90.5,91.1,90.5,True,0.011,6.7,Regular,90.5,True,0.011,6.7,Regular
+bidmc51,420,91.0,91.1,91.1,91.1,True,0.007,5.4,Regular,91.1,True,0.007,5.4,Regular
+bidmc51,450,88.2,88.2,87.4,88.2,True,0.015,7.0,Regular,88.2,True,0.015,7.0,Regular
+bidmc52,0,113.2,113.4,113.5,113.4,True,0.013,10.6,Regular,113.4,True,0.012,8.4,Regular
+bidmc52,30,114.0,113.9,114.0,113.9,True,0.016,13.9,Regular,113.9,True,0.016,13.9,Regular
+bidmc52,60,113.9,113.7,113.5,113.7,True,0.014,11.3,Regular,113.7,True,0.013,10.5,Regular
+bidmc52,90,114.4,114.4,114.4,114.4,True,0.011,8.2,Regular,114.4,True,0.011,8.2,Regular
+bidmc52,120,114.7,114.6,114.4,114.6,True,0.008,7.6,Regular,114.6,True,0.008,7.6,Regular
+bidmc52,150,115.0,115.1,115.4,115.1,True,0.01,8.6,Regular,115.1,True,0.01,8.7,Regular
+bidmc52,180,115.0,115.2,115.4,115.2,True,0.014,11.7,Regular,115.2,True,0.013,10.8,Regular
+bidmc52,210,115.3,115.3,115.4,115.3,True,0.009,8.2,Regular,115.3,True,0.01,8.3,Regular
+bidmc52,240,115.1,115.3,115.4,115.3,True,0.009,7.4,Regular,115.3,True,0.01,8.4,Regular
+bidmc52,270,115.2,115.4,115.4,115.5,True,0.011,8.7,Regular,115.4,True,0.011,9.3,Regular
+bidmc52,300,115.3,115.4,115.4,115.4,True,0.011,9.3,Regular,115.4,True,0.01,8.6,Regular
+bidmc52,330,116.0,116.0,116.3,116.0,True,0.021,17.9,Regular,116.0,True,0.02,17.7,Regular
+bidmc52,360,116.0,115.8,115.8,115.8,True,0.012,9.6,Regular,115.8,True,0.012,9.6,Regular
+bidmc52,390,116.2,115.9,116.3,115.9,True,0.016,13.5,Regular,115.9,True,0.015,13.1,Regular
+bidmc52,420,116.0,115.7,115.8,115.7,True,0.011,10.5,Regular,115.7,True,0.011,10.5,Regular
+bidmc52,450,116.4,113.9,116.3,116.2,True,0.14,107.1,Regular,113.9,True,0.14,107.1,Regular
+bidmc53,0,97.4,94.9,97.0,90.3,True,0.199,172.3,Slightly variable,94.9,True,0.199,171.8,Slightly variable
+bidmc53,30,96.7,88.3,87.0,88.3,True,0.268,211.1,Possibly irregular,88.3,True,0.268,211.3,Possibly irregular
+bidmc53,60,90.7,87.3,73.2,88.2,False,0.235,211.7,Slightly variable,89.6,False,0.202,180.3,Slightly variable
+bidmc53,90,90.7,84.4,87.4,84.4,True,0.231,189.5,Slightly variable,84.4,True,0.231,189.5,Slightly variable
+bidmc53,120,95.9,96.1,94.3,96.1,True,0.2,186.1,Slightly variable,96.1,True,0.2,186.3,Slightly variable
+bidmc53,150,92.9,94.6,94.3,94.3,True,0.148,138.3,Regular,94.6,True,0.149,139.9,Regular
+bidmc53,180,93.4,90.5,92.0,90.5,True,0.148,126.0,Regular,90.5,True,0.148,125.6,Regular
+bidmc53,210,91.6,85.4,86.1,85.5,True,0.189,172.8,Slightly variable,85.4,True,0.189,172.8,Slightly variable
+bidmc53,240,94.8,91.8,91.1,91.8,True,0.148,145.2,Regular,91.8,True,0.148,144.0,Regular
+bidmc53,270,96.1,86.4,93.4,91.0,True,0.238,235.4,Slightly variable,86.4,True,0.239,236.5,Slightly variable
+bidmc53,300,90.0,87.2,88.8,87.2,True,0.163,173.8,Slightly variable,87.2,True,0.163,173.8,Slightly variable
+bidmc53,330,92.4,87.5,91.1,89.8,True,0.178,154.7,Slightly variable,87.5,True,0.179,155.8,Slightly variable
+bidmc53,360,91.0,91.0,89.3,87.9,True,0.118,104.7,Regular,91.0,True,0.118,103.6,Regular
+bidmc53,390,89.1,85.9,87.9,88.2,True,0.204,221.8,Slightly variable,85.9,True,0.204,223.1,Slightly variable
+bidmc53,420,92.7,92.0,93.8,92.1,True,0.15,131.6,Regular,92.0,True,0.15,131.6,Regular
+bidmc53,450,91.8,90.0,93.4,92.3,True,0.197,184.1,Slightly variable,90.1,True,0.197,183.8,Slightly variable
