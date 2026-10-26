@@ -1,12 +1,13 @@
 import {
   View,
-  Text,
   ScrollView,
   TouchableOpacity,
   StyleSheet,
   Share,
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
+import { Text } from "@/components/AppText";
+
 
 // ── RESULT OBJECT SHAPE ───────────────────────────────────────
 interface ScanResult {
@@ -120,7 +121,7 @@ export default function ResultsScreen() {
       {/* Hero icon */}
       <View style={styles.heroSection}>
         <View style={[styles.heroIcon, { borderColor: conditionColor }]}>
-          <Text style={styles.heroIconText}>⚕️</Text>
+          <Text style={styles.heroIconText}>👍</Text>
         </View>
       </View>
 

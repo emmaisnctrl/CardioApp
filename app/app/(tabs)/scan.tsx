@@ -1,6 +1,5 @@
 import {
   View,
-  Text,
   TouchableOpacity,
   StyleSheet,
   Alert,
@@ -9,6 +8,7 @@ import { useRouter, useLocalSearchParams } from "expo-router";
 import { useState, useEffect, useRef } from "react";
 import { CameraView, useCameraPermissions, useMicrophonePermissions } from "expo-camera"
 import { FLASK_URL, TEMP_TOKEN } from "@/constants/api";
+import { Text } from "@/components/AppText";
 
 const SCAN_DURATION = 30;
 

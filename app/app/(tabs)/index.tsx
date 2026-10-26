@@ -1,6 +1,5 @@
 import {
   View,
-  Text,
   TouchableOpacity,
   StyleSheet,
   ScrollView,
@@ -8,6 +7,8 @@ import {
 } from "react-native";
 import { useRouter, useFocusEffect } from "expo-router";
 import { useCallback, useState } from "react";
+import { Text } from "@/components/AppText";
+import { CARD_SHADOW } from "@/constants/design";
 import { FLASK_URL, TEMP_TOKEN } from "@/constants/api";
 
 // Shape of a scan returned by Flask's /scan/history
@@ -36,9 +37,16 @@ const CONDITION_COLORS: Record<string, string> = {
 // The server stores UTC time; convert it to the phone's local time
 const toLocal = (s: string) => new Date(s.replace(" ", "T") + "Z");
 
-const greeting = () => {
+// Greeting and sub-line based on the phone's clock
+const timeOfDay = () => {
   const h = new Date().getHours();
-  return h < 12 ? "Good morning" : h < 17 ? "Good afternoon" : "Good evening";
+  if (h >= 5 && h < 12)
+    return { greeting: "Good morning", sub: "Ready for your morning scan?" };
+  if (h >= 12 && h < 17)
+    return { greeting: "Good afternoon", sub: "Ready for your afternoon scan?" };
+  if (h >= 17 && h < 22)
+    return { greeting: "Good evening", sub: "Ready for your evening scan?" };
+  return { greeting: "Hello", sub: "A calm moment makes a better scan. Rest first, then scan." };
 };
 
 const formatWhen = (s: string) => {
@@ -105,6 +113,7 @@ export default function HomeScreen() {
 
   const last = scans[0];
   const recent = scans.slice(0, 5);
+  const { greeting, sub } = timeOfDay();
 
   // ── Resting trend, worked out from the saved scans ──────────
   // Only resting scans with usable signal quality count. Scans saved before
@@ -147,8 +156,8 @@ export default function HomeScreen() {
       {/* Header */}
       <View style={styles.header}>
         <View>
-          <Text style={styles.greeting}>{greeting()}</Text>
-          <Text style={styles.greetingSub}>Ready for your daily scan?</Text>
+          <Text style={styles.greeting}>{greeting}</Text>
+          <Text style={styles.greetingSub}>{sub}</Text>
         </View>
       </View>
 
@@ -183,7 +192,7 @@ export default function HomeScreen() {
         onPress={() => router.push("/(tabs)/prescan" as any)}
         activeOpacity={0.85}
       >
-        <Text style={styles.scanButtonIcon}>∿</Text>
+        <Text style={styles.scanButtonIcon}></Text>
         <Text style={styles.scanButtonText}>Begin new scan</Text>
       </TouchableOpacity>
 
@@ -269,9 +278,10 @@ export default function HomeScreen() {
 const BLUE = "#1565C0";
 const AMBER = "#BA7517";
 const GREEN = "#1D9E75";
+const CARD_BORDER = "#eef0f3";
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#f5f5f5" },
+  container: { flex: 1, backgroundColor: "#f5f6f8" },
   scrollContent: { paddingBottom: 40 },
 
   header: {
@@ -285,26 +295,18 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0.5,
     borderBottomColor: "#ddd",
   },
-  greeting: { fontSize: 22, fontWeight: "700", color: "#111" },
-  greetingSub: { fontSize: 13, color: "#888", marginTop: 2 },
-  avatar: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: BLUE,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  avatarText: { color: "#fff", fontSize: 16, fontWeight: "700" },
+  greeting: { fontSize: 26, fontWeight: "800", color: "#0B1B2B", letterSpacing: -0.3 },
+  greetingSub: { fontSize: 13, color: "#7A8794", marginTop: 3 },
 
   metricRow: { flexDirection: "row", margin: 16, gap: 12 },
   metricCard: {
     flex: 1,
     backgroundColor: "#fff",
-    borderRadius: 12,
+    borderRadius: 14,
     padding: 14,
     borderWidth: 0.5,
-    borderColor: "#ddd",
+    borderColor: CARD_BORDER,
+    ...CARD_SHADOW,
   },
   metricIcon: { fontSize: 20, marginBottom: 4 },
   metricValue: { fontSize: 28, fontWeight: "700", color: "#111" },
@@ -328,6 +330,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: 8,
     marginBottom: 16,
+    elevation: 5,
+    shadowColor: BLUE,
+    shadowOpacity: 0.28,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 4 },
   },
   scanButtonIcon: { color: "#fff", fontSize: 20 },
   scanButtonText: { color: "#fff", fontSize: 16, fontWeight: "700" },
@@ -335,12 +342,13 @@ const styles = StyleSheet.create({
   trendCard: {
     marginHorizontal: 16,
     backgroundColor: "#fff",
-    borderRadius: 12,
+    borderRadius: 14,
     padding: 14,
     borderLeftWidth: 4,
     marginBottom: 20,
     borderWidth: 0.5,
-    borderColor: "#ddd",
+    borderColor: CARD_BORDER,
+    ...CARD_SHADOW,
   },
   trendTitle: { fontSize: 14, fontWeight: "700", color: "#111", marginBottom: 4 },
   trendText: { fontSize: 13, color: "#444", lineHeight: 19 },
@@ -351,17 +359,18 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     marginHorizontal: 16,
-    marginBottom: 8,
+    marginBottom: 10,
   },
   sectionTitle: { fontSize: 16, fontWeight: "700", color: "#111" },
 
   messageCard: {
     marginHorizontal: 16,
     backgroundColor: "#fff",
-    borderRadius: 10,
+    borderRadius: 12,
     padding: 16,
     borderWidth: 0.5,
-    borderColor: "#ddd",
+    borderColor: CARD_BORDER,
+    ...CARD_SHADOW,
   },
   messageText: { fontSize: 13, color: "#666", lineHeight: 20, textAlign: "center" },
 
@@ -371,10 +380,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     marginHorizontal: 16,
     padding: 14,
-    borderRadius: 10,
-    marginBottom: 8,
+    borderRadius: 12,
+    marginBottom: 10,
     borderWidth: 0.5,
-    borderColor: "#ddd",
+    borderColor: CARD_BORDER,
+    ...CARD_SHADOW,
   },
   scanDot: { width: 10, height: 10, borderRadius: 5, marginRight: 10 },
   scanEntryInfo: { flex: 1 },
