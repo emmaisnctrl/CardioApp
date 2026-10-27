@@ -1,13 +1,17 @@
 # React Native / Expo
-frontend/node_modules/
-frontend/.expo/
-frontend/dist/
+node_modules/
+app/node_modules/
+.expo/
+app/.expo/
+dist/
 
 # Python
-backend/venv/
-backend/.venv/
-backend/__pycache__/
-backend/**/__pycache__/
+venv/
+.venv/
+server/venv/
+server/.venv/
+__pycache__/
+server/**/__pycache__/
 *.py[cod]
 
 # Secrets and environment variables
@@ -15,11 +19,20 @@ backend/**/__pycache__/
 .env.*
 !.env.example
 
-# Local databases
+# Local databases and instance folders
 instance/
+server/instance/
 *.sqlite
 *.sqlite3
 *.db
+
+# Debug plots and artifacts
+debug_plots/
+server/debug_plots/
+
+# Ensure TFLite model is tracked
+!model.tflite
+!server/model.tflite
 
 # Editor and operating system files
 .vscode/

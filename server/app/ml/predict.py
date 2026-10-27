@@ -6,11 +6,20 @@ import matplotlib
 matplotlib.use("Agg")   # draw plots to files, no window needed
 import matplotlib.pyplot as plt
 from scipy.signal import butter, filtfilt, find_peaks, resample
-from tensorflow.keras.models import load_model
+import tensorflow as tf
 
 # ── LOAD MODEL AND LABELS ONCE AT STARTUP ───────────────────
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-model = load_model(os.path.join(BASE_DIR, "model.h5"))
+tflite_model_path = os.path.join(BASE_DIR, "model.tflite")
+if not os.path.exists(tflite_model_path):
+    tflite_model_path = "server/model.tflite"
+
+interpreter = tf.lite.Interpreter(model_path=tflite_model_path)
+interpreter.allocate_tensors()
+input_details = interpreter.get_input_details()
+output_details = interpreter.get_output_details()
+input_index = input_details[0]['index']
+output_index = output_details[0]['index']
 label_classes = np.load(os.path.join(BASE_DIR, "label_classes.npy"), allow_pickle=True)
 
 SAMPLING_RATE = 125   # Hz, the rate the model was trained on
@@ -322,7 +331,10 @@ def predict_condition(raw_signal, fps=30.0, state="Resting"):
         return {"error": "Could not detect a steady pulse. Keep your finger still, cover the lens and flash fully, and try again."}
 
     # CNN: Normal vs Tachycardia from the waveform pattern (a second opinion)
-    probs = model.predict(segment.reshape(1, SEGMENT_LENGTH, 1), verbose=0)[0]
+    input_data = segment.reshape(1, SEGMENT_LENGTH, 1).astype(np.float32)
+    interpreter.set_tensor(input_index, input_data)
+    interpreter.invoke()
+    probs = interpreter.get_tensor(output_index)[0]
     idx = int(np.argmax(probs))
     cnn_label = str(label_classes[idx])
     confidence = round(float(probs[idx]) * 100, 1)
