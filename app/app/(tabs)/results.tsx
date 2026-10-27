@@ -45,16 +45,47 @@ export default function ResultsScreen() {
   const router = useRouter();
   const params = useLocalSearchParams();
 
-  // Pull values from navigation params, fall back to mock values for testing
+  const hasKeyMetrics = Boolean(
+    params.heart_rate &&
+    params.heart_rate !== "null" &&
+    params.heart_rate !== "--" &&
+    params.condition
+  );
+
+  if (!hasKeyMetrics) {
+    return (
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <Text style={styles.headerTitle}>Scan Results</Text>
+        </View>
+
+        <View style={styles.emptyContainer}>
+          <View style={styles.emptyIconContainer}>
+            <Text style={styles.emptyIcon}>🫀</Text>
+          </View>
+          <Text style={styles.emptyTitle}>No Scan Data Available</Text>
+          <Text style={styles.emptySub}>
+            No scan data available. Please perform a scan to see your results.
+          </Text>
+          <TouchableOpacity
+            style={styles.primaryButtonWide}
+            onPress={() => router.push("/(tabs)/prescan" as any)}
+            activeOpacity={0.85}
+          >
+            <Text style={styles.primaryButtonText}>Begin New Scan</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    );
+  }
+
   const result: ScanResult = {
     condition: (params.condition as string) || "Normal",
-    confidence: (params.confidence as string) || "94.2",
-    heart_rate: (params.heart_rate as string) || "76",
+    confidence: (params.confidence as string) || "",
+    heart_rate: params.heart_rate as string,
     pre_scan_state: (params.pre_scan_state as string) || "Resting",
-    scan_id: (params.scan_id as string) || "1",
-    recommendation:
-      (params.recommendation as string) ||
-      "Your readings look healthy. Maintain your current activity level, stay hydrated, and consider scanning again in 24 hours to track your cardiovascular health over time.",
+    scan_id: (params.scan_id as string) || "",
+    recommendation: (params.recommendation as string) || "",
     scanned_at: (params.scanned_at as string) || new Date().toLocaleString(),
   };
 
@@ -78,11 +109,11 @@ export default function ResultsScreen() {
 
   // Confidence is empty for rule-based results (e.g. Bradycardia)
   const confidenceNum = parseFloat(result.confidence);
-  const hasConfidence = result.confidence !== "null" && !isNaN(confidenceNum);
+  const hasConfidence = Boolean(result.confidence && result.confidence !== "null" && !isNaN(confidenceNum) && confidenceNum > 0);
 
   // Heart rate label
   const heartRateNum = parseFloat(result.heart_rate);
-  const hasHeartRate = result.heart_rate !== "null" && !isNaN(heartRateNum);
+  const hasHeartRate = !isNaN(heartRateNum) && heartRateNum > 0;
   const hrStatus = !hasHeartRate
     ? "N/A"
     : heartRateNum > 100
@@ -102,7 +133,7 @@ export default function ResultsScreen() {
           (showPulse ? `Pulse regularity: ${regularity}\n` : "") +
           (hasSpo2 ? `SpO2 (uncalibrated estimate): ${spo2Num.toFixed(0)}%\n` : "") +
           (hasConfidence ? `Confidence: ${confidenceNum.toFixed(0)}%\n` : "") +
-          `\nRecommendation: ${result.recommendation}\n\n` +
+          (result.recommendation ? `\nRecommendation: ${result.recommendation}\n\n` : "\n\n") +
           `CardioApp is a screening tool and does not replace professional medical diagnosis.`,
       });
     } catch (error) {
@@ -251,13 +282,15 @@ export default function ResultsScreen() {
       )}
 
       {/* AI Recommendation Card */}
-      <View style={styles.recommendationCard}>
-        <View style={styles.recommendationHeader}>
-          <Text style={styles.recommendationIcon}>🛡</Text>
-          <Text style={styles.recommendationTitle}>Medical Insight</Text>
+      {result.recommendation ? (
+        <View style={styles.recommendationCard}>
+          <View style={styles.recommendationHeader}>
+            <Text style={styles.recommendationIcon}>🛡</Text>
+            <Text style={styles.recommendationTitle}>Medical Insight</Text>
+          </View>
+          <Text style={styles.recommendationText}>{result.recommendation}</Text>
         </View>
-        <Text style={styles.recommendationText}>{result.recommendation}</Text>
-      </View>
+      ) : null}
 
       {/* Action Buttons */}
       <TouchableOpacity
@@ -304,6 +337,48 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   headerTitle: { fontSize: 17, fontWeight: "600", color: "#111" },
+
+  emptyContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 32,
+    paddingTop: 80,
+    paddingBottom: 60,
+  },
+  emptyIconContainer: {
+    width: 90,
+    height: 90,
+    borderRadius: 45,
+    backgroundColor: "#E3F2FD",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 20,
+  },
+  emptyIcon: { fontSize: 44 },
+  emptyTitle: {
+    fontSize: 20,
+    fontWeight: "700",
+    color: "#0B1B2B",
+    marginBottom: 8,
+    textAlign: "center",
+  },
+  emptySub: {
+    fontSize: 14,
+    color: "#666",
+    textAlign: "center",
+    lineHeight: 22,
+    marginBottom: 28,
+  },
+  primaryButtonWide: {
+    backgroundColor: BLUE,
+    borderRadius: 30,
+    height: 52,
+    paddingHorizontal: 32,
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+  },
 
   heroSection: { alignItems: "center", marginTop: 24, marginBottom: 12 },
   heroIcon: {

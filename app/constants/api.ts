@@ -1,3 +1,3 @@
 // One place to change the server address and token
-export const FLASK_URL = "http://192.168.0.225:5000";
+export const FLASK_URL = "https://upcountry-haiku-saffron.ngrok-free.dev/";
 export const TEMP_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5MjUzMzcxNCwianRpIjoiOTVhZTgxYWYtM2FhMS00MDNjLThhZmYtYjFhYzNlOGJkNDkwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTI1MzM3MTQsImNzcmYiOiJlNjRmZDU4MC0yM2Q2LTQ3NzEtOWY0OS02OTFkNDNkODJjMjEifQ.uRR7epe9J5d7aaxommar2DjmfAPQat0wAiZagkyvHx4";
