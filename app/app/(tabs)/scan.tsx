@@ -7,7 +7,7 @@ import {
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { useState, useEffect, useRef } from "react";
 import { CameraView, useCameraPermissions, useMicrophonePermissions } from "expo-camera"
-import { FLASK_URL, TEMP_TOKEN } from "@/constants/api";
+import { FLASK_URL, getAuthToken } from "@/constants/api";
 import { Text } from "@/components/AppText";
 
 const SCAN_DURATION = 30;
@@ -88,10 +88,11 @@ export default function ScanScreen() {
       } as any);
       formData.append("pre_scan_state", pre_scan_state ?? "Resting");
 
+      const token = await getAuthToken();
       const response = await fetch(`${FLASK_URL}/scan/predict-video`, {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${TEMP_TOKEN}`,
+          Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
         },
         body: formData,
@@ -191,6 +192,7 @@ export default function ScanScreen() {
           style={StyleSheet.absoluteFill}
           facing="back"
           mode="video"
+          videoQuality="480p"
           enableTorch={isScanning}
         />
         <View style={styles.cameraOverlay}>

@@ -4,6 +4,7 @@ from app.models.user import User
 from flask_jwt_extended import create_access_token
 from flask_mail import Message
 import secrets
+import uuid
 
 # Create a blueprint named 'auth' to group all authentication routes
 auth = Blueprint('auth', __name__)
@@ -138,3 +139,30 @@ def test_token():
     # Returns a token for user ID 1 for testing purposes only
     token = create_access_token(identity="1")
     return jsonify({'token': token}), 200
+
+
+# ─── ANONYMOUS SILENT LOGIN ─────────────────────────────────
+@auth.route('/anonymous', methods=['POST'])
+def anonymous():
+    anon_id = str(uuid.uuid4())
+    dummy_username = f"anon_{anon_id[:8]}"
+    dummy_email = f"{anon_id}@cardioapp.local"
+    dummy_password = bcrypt.generate_password_hash(anon_id).decode('utf-8')
+
+    new_user = User(
+        username=dummy_username,
+        email=dummy_email,
+        password=dummy_password
+    )
+    db.session.add(new_user)
+    db.session.commit()
+
+    token = create_access_token(identity=str(new_user.id))
+    return jsonify({
+        'message': 'Anonymous user session created',
+        'token': token,
+        'user': {
+            'id': new_user.id,
+            'username': new_user.username
+        }
+    }), 201

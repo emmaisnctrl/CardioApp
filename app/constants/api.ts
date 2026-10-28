@@ -1,3 +1,39 @@
-// One place to change the server address and token
-export const FLASK_URL = "https://upcountry-haiku-saffron.ngrok-free.dev/";
-export const TEMP_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc5MjUzMzcxNCwianRpIjoiOTVhZTgxYWYtM2FhMS00MDNjLThhZmYtYjFhYzNlOGJkNDkwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE3OTI1MzM3MTQsImNzcmYiOiJlNjRmZDU4MC0yM2Q2LTQ3NzEtOWY0OS02OTFkNDNkODJjMjEifQ.uRR7epe9J5d7aaxommar2DjmfAPQat0wAiZagkyvHx4";
+import * as SecureStore from "expo-secure-store";
+
+// One place to change the server address
+export const FLASK_URL = "https://upcountry-haiku-saffron.ngrok-free.dev";
+
+const AUTH_TOKEN_KEY = "cardioapp_auth_token";
+
+export async function getAuthToken(): Promise<string | null> {
+  try {
+    const savedToken = await SecureStore.getItemAsync(AUTH_TOKEN_KEY);
+    if (savedToken) {
+      return savedToken;
+    }
+
+    const baseUrl = FLASK_URL.replace(/\/+$/, "");
+    const res = await fetch(`${baseUrl}/auth/anonymous`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (!res.ok) {
+      console.log("Anonymous auth failed, status:", res.status);
+      return null;
+    }
+
+    const data = await res.json();
+    if (data.token) {
+      await SecureStore.setItemAsync(AUTH_TOKEN_KEY, data.token);
+      return data.token;
+    }
+
+    return null;
+  } catch (error) {
+    console.log("Error obtaining auth token:", error);
+    return null;
+  }
+}

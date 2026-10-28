@@ -9,7 +9,7 @@ import { useRouter, useFocusEffect } from "expo-router";
 import { useCallback, useState } from "react";
 import { Text } from "@/components/AppText";
 import { CARD_SHADOW } from "@/constants/design";
-import { FLASK_URL, TEMP_TOKEN } from "@/constants/api";
+import { FLASK_URL, getAuthToken } from "@/constants/api";
 
 // Shape of a scan returned by Flask's /scan/history
 interface SavedScan {
@@ -70,8 +70,9 @@ export default function HomeScreen() {
     setLoading(true);
     setError(false);
     try {
+      const token = await getAuthToken();
       const res = await fetch(`${FLASK_URL}/scan/history`, {
-        headers: { Authorization: `Bearer ${TEMP_TOKEN}` },
+        headers: { Authorization: `Bearer ${token}` },
       });
       if (!res.ok) throw new Error("Bad response");
       const data = await res.json();
